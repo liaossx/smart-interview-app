@@ -1,0 +1,295 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "b967db41",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA"
+    ],
+    "responsibilities": [
+      "参与iBOSS项目Java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写",
+      "配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改"
+    ],
+    "required_skills": [
+      "熟悉软件工程开发流程、基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言",
+      "熟悉SpringBoot框架者优先",
+      "接触过后端开发常用技术及工具",
+      "了解Postman、Git、Maven、IDEA",
+      "熟悉MySQL、Redis者优先",
+      "性格开朗，学习及语言表达能力强，善于与人沟通、交流"
+    ],
+    "experience_level": "校招",
+    "key_requirements": [
+      "应届毕业生，本科及以上学历",
+      "通信、计算机、电子信息、软件工程等相关专业",
+      "熟悉软件工程开发流程、基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言"
+    ],
+    "role_type": "后端开发",
+    "company_scale": "大厂",
+    "company_scale_reason": "公司名称为中国移动国际公司，中国移动为知名大型国企，属于大厂范畴",
+    "summary": "该岗位为中国移动国际公司面向应届毕业生的Java后端开发校招职位，主要参与iBOSS项目的开发与维护，要求掌握Java、SpringBoot、MySQL、Redis等技术，具备良好的沟通和学习能力。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "软件工程开发流程",
+      "基础代码开发规范",
+      "SQL语句编写",
+      "后端开发常用技术及工具"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求熟练掌握Java，且简历无任何技能或项目，需考察候选人是否具备基本编程能力",
+        "depth": "深入"
+      },
+      {
+        "area": "SpringBoot框架",
+        "reason": "JD中优先考虑熟悉SpringBoot的候选人，是项目开发的核心框架",
+        "depth": "一般"
+      },
+      {
+        "area": "数据库基础（MySQL/Redis）",
+        "reason": "JD要求具备SQL编写能力，且熟悉MySQL和Redis优先，是后端开发必备技能",
+        "depth": "一般"
+      },
+      {
+        "area": "Linux与Shell",
+        "reason": "JD要求了解Linux常用命令及简单Shell脚本，是日常开发环境的基础",
+        "depth": "了解"
+      },
+      {
+        "area": "开发工具与协作",
+        "reason": "JD要求了解Postman、Git、Maven、IDEA，体现团队协作和工具使用能力",
+        "depth": "了解"
+      },
+      {
+        "area": "学习能力与沟通表达",
+        "reason": "JD强调性格开朗、学习及语言表达能力强，且简历空白，需评估候选人潜力和态度",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历完全空白，面试应重点考察候选人的Java基础、编程思维、学习能力和态度。从Java语法、面向对象、集合、多线程等基础入手，辅以简单SQL和Linux命令提问，同时通过开放式问题了解候选人的学习经历、项目经验（即使非正式项目）和职业规划，评估其潜力和匹配度。",
+    "difficulty": "easy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的大致流程，以及它如何处理哈希冲突。",
+      "purpose": "考察候选人对Java集合框架核心类的理解深度，是否了解底层数据结构。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "HashMap基于数组+链表+红黑树实现",
+        "put方法通过hashCode计算桶索引，存入链表或红黑树",
+        "get方法通过计算hash值定位桶，遍历链表或红黑树查找key",
+        "哈希冲突通过链地址法解决，链表长度超过8且数组长度≥64时转为红黑树"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请简述Java内存模型（JMM）中主内存和工作内存的关系，以及volatile关键字的作用。",
+      "purpose": "考察对Java并发编程基础概念的掌握，这是大厂面试常见考点。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "所有变量存储在主内存中，每个线程有自己的工作内存",
+        "线程对变量的操作必须在工作内存中进行，不能直接操作主内存",
+        "volatile保证可见性：写操作立即刷新到主内存，读操作从主内存读取",
+        "volatile禁止指令重排序，但不保证原子性"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请解释Spring Boot自动配置的原理，以及@SpringBootApplication注解的作用。",
+      "purpose": "考察对Spring Boot核心机制的理解，这是JD中明确要求的技术栈。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "自动配置基于@EnableAutoConfiguration注解和spring.factories文件",
+        "通过@Conditional系列注解按条件加载配置类",
+        "@SpringBootApplication是组合注解，包含@EnableAutoConfiguration、@ComponentScan等",
+        "启动类通过@SpringBootApplication自动扫描当前包及其子包的组件"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请写出一个SQL查询语句，统计某个表中每个部门的员工数量，并按数量降序排列。",
+      "purpose": "考察基础SQL编写能力，这是校招生的基本要求。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "正确使用GROUP BY和COUNT函数",
+        "使用ORDER BY进行降序排序",
+        "正确选择表名和字段名（需合理假设）"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "技术基础",
+      "question": "请列举常用的Linux命令（至少5个），并说明其中一个命令（如grep）的常见用法。",
+      "purpose": "考察对Linux基本操作的熟悉程度，这是日常开发环境的基础。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "列出：ls、cd、cp、mv、rm、ps、grep等",
+        "grep用于在文件中搜索指定模式，常与管道符配合使用",
+        "示例：grep 'error' log.txt 或 cat log.txt | grep 'error'"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "技术基础",
+      "question": "请解释MySQL中索引的作用，以及B+树索引结构的优势。",
+      "purpose": "考察对数据库索引原理的理解，这是性能优化的基础。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "索引加速数据检索，类似目录",
+        "B+树所有数据存储在叶子节点，非叶子节点只存储键值，查询稳定",
+        "B+树叶子节点通过链表连接，范围查询高效",
+        "B+树树高较低，减少磁盘I/O次数"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "项目深挖",
+      "question": "请描述你参与过的一个编程项目（可以是课程设计或自学项目），包括它的功能、你承担的角色以及遇到的难点和解决方案。",
+      "purpose": "考察候选人的项目经验、问题解决能力和学习能力，弥补简历空白。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "清晰描述项目背景和功能",
+        "明确说明自己的角色和贡献",
+        "具体讲述遇到的困难及如何解决",
+        "体现主动学习和思考的能力"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "项目深挖",
+      "question": "在团队开发中，如果你发现代码有Bug但不确定是否由自己引入，你会如何处理？",
+      "purpose": "考察团队协作和问题排查意识，这是JD中强调的职责。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "先确认Bug现象，尝试复现",
+        "使用Git查看相关代码的修改历史，定位引入人",
+        "与团队成员沟通确认",
+        "及时修复并提交测试，不推诿责任"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "场景设计",
+      "question": "假设iBOSS项目需要设计一个缓存来存储用户登录状态，你会选择哪种数据结构？请说明理由。",
+      "purpose": "考察Redis实际使用场景的设计能力，结合JD业务场景。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "选择Redis的String类型存储token与用户信息的映射",
+        "设置过期时间（如30分钟）以自动清理无效会话",
+        "考虑使用Hash存储用户信息，减少序列化开销",
+        "注意并发安全问题，如使用Redis锁避免重复登录"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "场景设计",
+      "question": "如果系统日志文件持续增长，你会用什么Linux命令快速查找最近10分钟内的错误日志？请写出具体命令。",
+      "purpose": "考察实际运维场景中的工具使用能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "使用grep结合时间过滤，如grep \"error\" /var/log/app.log | grep \"$(date -d '10 minutes ago' '+%Y-%m-%d %H:%M')\"",
+        "或者使用journalctl（如果系统用systemd）",
+        "也可以先使用tail或sed提取最近10分钟的行再grep"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "软技能",
+      "question": "请分享一次你快速学习一门新技术并应用的成功经历。",
+      "purpose": "考察学习能力和主动性，这是JD中强调的软素质。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "具体说明学习的技术名称和来源",
+        "描述学习方法和时间投入",
+        "说明如何应用到实际场景中",
+        "总结学习成果和收获"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "软技能",
+      "question": "你对我们公司的iBOSS项目有什么了解？你认为自己能为这个项目带来什么价值？",
+      "purpose": "考察候选人对公司的关注度和求职动机，以及自我认知。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "表达对iBOSS项目的基本了解（如支撑BOSS系统）",
+        "结合自身技能强调学习和适应能力",
+        "表现出积极态度和团队合作意愿",
+        "体现对通信行业的兴趣"
+      ]
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的大致流程，以及它如何处理哈希冲突。",
+      "category": "技术基础",
+      "answer": "【原始回答】请你告诉我答案吧\n【追问回答】hashmap内部用了 链表和红黑树",
+      "score": 1,
+      "feedback": "候选人未能独立回答问题，直接请求答案，仅在被追问后提及HashMap内部使用了链表和红黑树，但缺乏对put/get流程、哈希冲突处理、红黑树转换条件等核心要点的阐述。技术基础非常薄弱，软技能方面缺乏主动思考和表达能力。",
+      "dimensions": {
+        "技术基础": 1,
+        "项目经验": 0,
+        "场景设计": 0,
+        "软技能": 1
+      },
+      "confidence": 9,
+      "follow_up_question": "请尝试自己回答一下这个问题，不需要完美，说出你目前对HashMap工作原理的理解即可。比如，你知道HashMap内部用到了数组和链表吗？put一个键值对时大概会做哪些步骤？",
+      "original_score": 0
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [
+      1
+    ],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

@@ -1,0 +1,114 @@
+{
+  "messages": [],
+  "user_id": 1,
+  "session_id": "2422b5aa",
+  "jd_content": "We need a Java developer with Spring Boot, MySQL, and microservices experience",
+  "resume_content": "5 years Java development, Spring Boot, REST APIs",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "question": "What is Spring Boot?",
+      "category": "Java",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    },
+    {
+      "question": "Explain IoC",
+      "category": "Java",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请解释Java中HashMap在并发环境下可能出现的问题，并说明ConcurrentHashMap是如何解决这些问题的？",
+      "purpose": "考察对并发容器底层原理的理解，以及多线程安全问题的分析能力",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "HashMap在并发put时可能形成环形链表导致死循环（JDK 1.7），或数据覆盖、size不准确等问题",
+        "ConcurrentHashMap通过分段锁（JDK 1.7）或CAS+synchronized（JDK 1.8）保证线程安全",
+        "JDK 1.8中利用数组元素上的synchronized锁住链表头或红黑树根节点，配合CAS操作实现高效并发"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "项目经验",
+      "question": "请描述一个你在项目中遇到的最复杂的性能瓶颈问题，你是如何定位和解决的？",
+      "purpose": "考察候选人实际排查和优化问题的能力，以及项目中的技术深度",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "清晰描述问题背景、现象和影响范围",
+        "说明使用的定位工具（如JProfiler、Arthas、慢SQL日志等）和分析过程",
+        "给出具体的优化方案（如索引优化、缓存引入、线程池调整等）及最终效果"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "场景设计",
+      "question": "设计一个短链接生成系统，要求支持高并发访问和短链接的过期删除，请给出核心架构和关键数据结构。",
+      "purpose": "考察系统设计能力，包括分布式ID生成、缓存策略、数据一致性等",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "使用发号器（如雪花算法）或哈希+冲突解决生成唯一短码",
+        "采用Redis缓存热点短链接映射，设置过期时间，配合数据库持久化",
+        "通过定时任务或惰性删除处理过期短链接，考虑缓存穿透/雪崩的防护"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "技术基础",
+      "question": "请详细说明Java内存模型中的happens-before原则，并举例说明它在多线程编程中的应用。",
+      "purpose": "考察对Java并发底层原理的理解，以及能否正确运用规则避免指令重排序问题",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "列举主要happens-before规则：程序次序规则、volatile变量规则、锁规则、传递性等",
+        "解释规则如何保证可见性和有序性，防止指令重排序带来的问题",
+        "举例说明：如使用volatile修饰状态标志保证线程间正确通信，或synchronized保证临界区内的有序性"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "软技能",
+      "question": "当你的技术方案被团队成员或上级强烈反对时，你会如何处理？请结合一个具体经历说明。",
+      "purpose": "考察沟通能力、冲突解决技巧以及团队协作中的成熟度",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "先倾听反对意见，理解对方的顾虑和出发点",
+        "用数据或原型验证方案的可行性，理性讨论利弊",
+        "如果对方观点更优，愿意调整方案；如果坚持己见，尝试折中方案或向上反馈，保持团队和谐"
+      ]
+    }
+  ],
+  "current_question_index": 2,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "What is Spring Boot?",
+      "category": "Java",
+      "answer": "A framework for microservices",
+      "score": 6,
+      "feedback": "ok"
+    },
+    {
+      "question_id": 2,
+      "question": "Explain IoC",
+      "category": "Java",
+      "answer": "Inversion of Control",
+      "score": 7,
+      "feedback": "good"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 2,
+  "phase": "questions_ready"
+}

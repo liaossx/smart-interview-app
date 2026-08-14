@@ -1,0 +1,253 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "5b73df20",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "Linux",
+      "Shell"
+    ],
+    "responsibilities": [
+      "参与iBOSS项目Java开发，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写",
+      "配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改"
+    ],
+    "required_skills": [
+      "熟悉软件工程开发流程、基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言",
+      "熟悉SpringBoot框架者优先",
+      "接触过后端开发常用技术及工具",
+      "了解Postman、Git、Maven、IDEA",
+      "熟悉MySQL、Redis者优先",
+      "性格开朗，学习及语言表达能力强，善于与人沟通、交流"
+    ],
+    "experience_level": "校招",
+    "key_requirements": [
+      "应届毕业生",
+      "本科及以上学历",
+      "通信、计算机、电子信息、软件工程等相关专业"
+    ],
+    "role_type": "后端开发",
+    "company_scale": "大厂",
+    "company_scale_reason": "中国移动为知名大型国企，属于大厂范畴",
+    "summary": "中国移动国际公司招聘应届毕业生参与iBOSS项目Java后端开发，要求掌握Java、SpringBoot、数据库及常用开发工具，注重沟通与学习能力。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "Linux",
+      "Shell",
+      "SQL",
+      "软件工程开发流程",
+      "代码开发规范",
+      "沟通能力"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求熟练掌握Java，但简历无任何技能或项目，需考察候选人是否具备基本编程能力",
+        "depth": "深入"
+      },
+      {
+        "area": "SpringBoot框架",
+        "reason": "JD中优先考虑熟悉SpringBoot的候选人，需评估其了解程度",
+        "depth": "一般"
+      },
+      {
+        "area": "数据库基础（MySQL/Redis）",
+        "reason": "JD要求具备SQL编写能力，且熟悉MySQL/Redis优先，需考察基础数据库知识",
+        "depth": "一般"
+      },
+      {
+        "area": "常用开发工具（Git/Maven/Postman/IDEA）",
+        "reason": "JD要求了解这些工具，需确认候选人是否有使用经验",
+        "depth": "了解"
+      },
+      {
+        "area": "Linux与Shell",
+        "reason": "JD要求了解Linux常用命令及简单Shell脚本，需考察基础操作能力",
+        "depth": "了解"
+      },
+      {
+        "area": "沟通与学习能力",
+        "reason": "JD强调性格开朗、善于沟通，且简历空白，需通过面试观察软技能",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历完全空白，面试需从零基础考察候选人的学习潜力、基础编程思维和工具认知。先通过简单Java编程题验证基本语法掌握程度，再询问对SpringBoot、数据库、Git等技术的了解情况，最后通过情景题评估沟通和问题解决能力。整体以引导式提问为主，挖掘候选人的学习意愿和可塑性。",
+    "difficulty": "easy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请用 Java 编写一个方法，实现将字符串中的每个单词首字母大写（例如输入 'hello world'，输出 'Hello World'）。",
+      "purpose": "考察 Java 基础语法、字符串操作和基本编程能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "字符串分割成单词数组",
+        "对每个单词提取首字母并转大写",
+        "拼接单词并返回",
+        "考虑空字符串或 null 的处理"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请解释 Java 中 HashMap 的底层实现原理，包括存储结构、如何解决哈希冲突以及扩容机制。",
+      "purpose": "考察 Java 集合框架的底层原理，判断其是否深入理解常用数据结构。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "基于数组+链表/红黑树（JDK 1.8+）",
+        "哈希函数计算索引",
+        "链地址法解决冲突，链表转红黑树的阈值（8）",
+        "扩容为原大小的2倍，rehash 过程"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "Spring Boot 的自动配置原理是什么？请结合 @SpringBootApplication 注解简要说明。",
+      "purpose": "考察对 SpringBoot 框架核心机制的理解，是否符合 JD 中优先熟悉 SpringBoot 的要求。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "@SpringBootApplication 包含 @EnableAutoConfiguration",
+        "通过 spring.factories 文件加载自动配置类",
+        "@Conditional 条件注解实现按需配置",
+        "示例：DataSourceAutoConfiguration 自动配置数据源"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请写出以下 SQL 查询语句：查询学生表中成绩大于80分的学生姓名和成绩，并按成绩降序排列。",
+      "purpose": "考察基础 SQL 编写能力，JD 明确要求具备基础 SQL 语句编写能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "SELECT name, score FROM student",
+        "WHERE score > 80",
+        "ORDER BY score DESC"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "技术基础",
+      "question": "请解释 MySQL 中索引的作用，并说明 B+ 树索引的优势。",
+      "purpose": "考察数据库索引基础知识，评估其对 MySQL 性能优化的理解。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "索引加速数据检索",
+        "B+ 树非叶子节点只存键，叶子节点存数据并形成有序链表",
+        "减少磁盘 I/O，范围查询高效",
+        "支持聚簇索引和辅助索引"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "技术基础",
+      "question": "请简要说明 Git 中 git add、git commit、git push 三个命令的作用和顺序。",
+      "purpose": "考察对 Git 基本工作流程的了解，JD 要求了解 Git。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "git add 将修改添加到暂存区",
+        "git commit 将暂存区内容提交到本地仓库",
+        "git push 将本地提交推送到远程仓库",
+        "顺序为 add -> commit -> push"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "技术基础",
+      "question": "请列举至少三个 Linux 常用命令，并说明其用途（例如查看文件、进程管理等）。",
+      "purpose": "考察对 Linux 基本命令的了解，JD 要求了解 Linux 常用命令。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "ls：列出目录内容",
+        "cd：切换目录",
+        "ps：查看进程",
+        "grep：文本搜索",
+        "chmod：修改文件权限"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "场景设计",
+      "question": "假设你参与开发的 iBOSS 项目需要设计一个用户登录接口，请描述从接收请求到返回响应的完整流程，并说明可能用到的技术组件。",
+      "purpose": "考察后端开发基本流程和 SpringBoot 项目实战理解，符合 JD 中的项目场景。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "Controller 层接收 POST 请求",
+        "校验参数（用户名、密码）",
+        "调用 Service 层查询数据库验证用户",
+        "生成 token（如 JWT）存入 Redis 并设置过期时间",
+        "返回 token 给前端",
+        "使用 Postman 测试接口"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "场景设计",
+      "question": "如果线上出现了一个 BUG，导致某个接口返回数据错误，请描述你的排查和修复流程。",
+      "purpose": "考察问题排查能力和开发流程规范性，JD 要求配合缺陷修复。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "先复现问题，收集错误日志",
+        "分析日志定位错误代码位置",
+        "使用 IDE 调试或添加日志",
+        "修改代码并编写单元测试",
+        "提交 Git，通知测试人员回归验证",
+        "更新相关文档"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "当你和测试人员对某个 BUG 的修复方案产生分歧时，你会如何处理？",
+      "purpose": "考察沟通能力和团队协作能力，JD 强调性格开朗、善于沟通。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "先倾听测试人员的观点和理由",
+        "用数据和事实说明自己的方案",
+        "共同讨论，寻找折衷方案",
+        "必要时请教上级或团队决策"
+      ]
+    }
+  ],
+  "current_question_index": 0,
+  "answers": [],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

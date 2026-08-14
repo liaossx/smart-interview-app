@@ -1,0 +1,329 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "633b6807",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA"
+    ],
+    "responsibilities": [
+      "参与iBOSS项目Java开发，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写",
+      "配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改"
+    ],
+    "required_skills": [
+      "熟悉软件工程开发流程、基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言",
+      "熟悉SpringBoot框架者优先",
+      "接触过后端开发常用技术及工具",
+      "了解Postman、Git、Maven、IDEA",
+      "熟悉MySQL、Redis者优先",
+      "性格开朗，学习及语言表达能力强，善于与人沟通、交流"
+    ],
+    "experience_level": "校招",
+    "key_requirements": [
+      "应届毕业生",
+      "本科及以上学历",
+      "通信、计算机、电子信息、软件工程等相关专业"
+    ],
+    "role_type": "后端开发",
+    "company_scale": "大厂",
+    "company_scale_reason": "公司名称为中国移动国际公司，中国移动为知名大型央企，属于大厂范畴",
+    "summary": "中国移动国际公司招聘应届毕业生参与iBOSS项目Java后端开发，要求熟悉Java、SpringBoot、数据库及Linux等技能，负责代码开发、功能迭代、缺陷修复等工作。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "SQL编写",
+      "软件工程开发流程",
+      "代码开发规范"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求熟练掌握Java，且简历无任何技能，需考察候选人是否具备基本编程能力",
+        "depth": "深入"
+      },
+      {
+        "area": "SpringBoot框架",
+        "reason": "JD优先考虑熟悉SpringBoot的候选人，且项目使用该框架",
+        "depth": "一般"
+      },
+      {
+        "area": "数据库基础",
+        "reason": "JD要求具备SQL编写能力，熟悉MySQL优先",
+        "depth": "一般"
+      },
+      {
+        "area": "Linux与Shell",
+        "reason": "JD要求了解Linux常用命令及Shell脚本",
+        "depth": "了解"
+      },
+      {
+        "area": "开发工具与协作",
+        "reason": "JD要求了解Postman、Git、Maven、IDEA等工具",
+        "depth": "了解"
+      },
+      {
+        "area": "沟通与学习能力",
+        "reason": "JD强调性格开朗、学习及语言表达能力强，且简历空白，需评估软素质",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历完全空白，面试应作为纯校招基础能力考察。重点测试Java核心语法、面向对象思想、集合框架等基础知识，辅以SpringBoot简单概念、SQL基础语句、Linux常用命令等。同时通过开放式问题评估候选人的学习态度、沟通表达和逻辑思维。建议从简单问题入手，逐步深入，观察候选人的反应速度和知识广度。",
+    "difficulty": "easy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中面向对象编程的三大特性：封装、继承和多态，并分别给出一个简单的代码示例。",
+      "purpose": "考察面向对象编程基础，这是Java核心概念，用于评估候选人对基本编程范式的理解。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "封装：将数据和操作封装在类中，通过访问修饰符控制访问权限，示例：private属性+getter/setter",
+        "继承：子类继承父类的非私有属性和方法，实现代码复用，示例：extends关键字",
+        "多态：同一接口的不同实现方式，通过方法重写和接口实现体现，示例：父类引用指向子类对象"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的实现过程，以及如何处理哈希冲突。",
+      "purpose": "考察对常用集合类的底层原理理解，这是Java面试高频题，评估候选人的技术深度。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "基于数组+链表+红黑树实现，初始容量16，负载因子0.75",
+        "put方法：计算key的hash值，确定数组索引，若为空则直接插入，否则遍历链表/红黑树，若找到相同key则更新value，否则新增节点",
+        "get方法：计算hash值定位索引，遍历链表/红黑树，通过equals比较key，返回对应value",
+        "哈希冲突处理：使用链地址法，当链表长度超过8且数组长度>=64时转换为红黑树"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请解释MySQL中索引的作用，以及B+树索引结构的特点。为什么MySQL InnoDB引擎选择B+树作为索引结构？",
+      "purpose": "考察数据库基础和索引原理，JD要求熟悉SQL和MySQL，评估候选人对数据库优化的理解。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "索引作用：加速数据查询，减少磁盘I/O操作",
+        "B+树特点：所有数据存储在叶子节点，非叶子节点只存储索引键，叶子节点通过链表连接，适合范围查询",
+        "选择原因：B+树层级低（通常3-4层），磁盘I/O次数少；叶子节点有序，支持高效范围查询和排序；非叶子节点可存储更多索引键"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请解释Spring Boot中自动配置的原理。什么是@SpringBootApplication注解？它包含了哪些元注解？",
+      "purpose": "考察对Spring Boot核心机制的理解，JD优先考虑熟悉SpringBoot的候选人。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "自动配置原理：基于条件注解（@Conditional）和spring.factories文件，Spring Boot启动时扫描META-INF/spring.factories中的自动配置类，根据类路径中的jar包和配置条件决定是否加载",
+        "@SpringBootApplication包含：@SpringBootConfiguration（继承@Configuration）、@EnableAutoConfiguration（启用自动配置）、@ComponentScan（组件扫描）",
+        "可通过排除特定自动配置类或使用@EnableAutoConfiguration的exclude属性进行自定义"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "项目深挖",
+      "question": "假设你在iBOSS项目中需要实现一个用户登录功能，请描述你会如何设计后端接口（包括请求方式、参数、响应格式），并写出一个最简单的Spring Boot Controller示例代码。",
+      "purpose": "考察对Spring Boot实际开发流程的掌握，包括RESTful API设计和基础编码能力，结合项目场景。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "接口设计：POST /api/login，请求体包含username和password，响应包含token和用户信息",
+        "Controller示例：使用@RestController、@PostMapping注解，注入UserService处理业务逻辑",
+        "参数校验：使用@Valid注解和Validation框架",
+        "响应格式：统一使用Result对象包含code、message、data"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "项目深挖",
+      "question": "在iBOSS项目中，如果遇到一个线上Bug导致用户无法正常下单，请描述你的排查和修复流程。",
+      "purpose": "考察问题排查能力和实战经验，JD要求配合测试人员修复缺陷，评估候选人的问题解决能力。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "第一步：确认问题现象，收集日志和错误信息（查看应用日志、服务器日志）",
+        "第二步：复现问题，通过Postman或前端操作模拟请求",
+        "第三步：定位问题，检查代码逻辑、数据库状态、Redis缓存等",
+        "第四步：分析原因，如空指针、SQL错误、并发问题等",
+        "第五步：修复并测试，编写单元测试，提交代码合并请求"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "场景设计",
+      "question": "在iBOSS项目中，需要设计一个缓存方案来减少数据库压力。假设用户查询套餐信息的接口访问量很大，请设计一个基于Redis的缓存方案，包括缓存策略（如过期时间、缓存更新策略）和如何保证缓存与数据库的一致性。",
+      "purpose": "考察Redis实际应用和缓存设计能力，JD要求熟悉Redis，评估候选人对缓存场景的理解。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "缓存策略：使用Redis String存储套餐JSON，设置合理的过期时间（如5分钟），采用缓存预热（启动时加载热门数据）",
+        "缓存更新策略：先更新数据库，再删除缓存（Cache Aside Pattern），或使用延迟双删",
+        "一致性保证：设置过期时间作为兜底，使用消息队列异步同步数据库变更",
+        "缓存穿透/击穿/雪崩防护：布隆过滤器、互斥锁、随机过期时间"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "场景设计",
+      "question": "请设计一个简单的Shell脚本，用于每天凌晨备份MySQL数据库中的iBOSS项目数据，并保留最近7天的备份文件。请写出核心逻辑。",
+      "purpose": "考察Linux和Shell脚本能力，JD要求了解Linux常用命令和Shell脚本。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "使用mysqldump命令导出数据库，文件名包含日期（如backup_20231001.sql）",
+        "使用gzip压缩备份文件以节省空间",
+        "使用crontab设置定时任务（0 0 * * *）每天凌晨执行",
+        "备份完成后使用find命令查找并删除7天前的备份文件（find /backup -name \"*.sql.gz\" -mtime +7 -delete）"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "技术基础",
+      "question": "请解释Git中分支管理的基本概念，包括创建分支、合并分支、解决冲突。在实际项目中，你会如何组织分支策略（如Git Flow）？",
+      "purpose": "考察对版本控制工具的掌握，JD要求了解Git，评估候选人的团队协作能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "基本命令：git branch创建分支，git checkout切换分支，git merge合并分支",
+        "冲突解决：合并时若同一文件被不同分支修改，需手动编辑解决冲突后提交",
+        "分支策略：使用Git Flow，包括master（主分支）、develop（开发分支）、feature（功能分支）、release（发布分支）、hotfix（紧急修复分支）"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "请描述一次你在团队合作中遇到的困难，以及你是如何沟通并解决问题的。如果团队成员对技术方案有分歧，你会怎么处理？",
+      "purpose": "考察沟通能力和团队协作能力，JD强调性格开朗、善于沟通，评估候选人的软素质。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "举例说明困难场景，如项目进度紧张、技术方案争议等",
+        "沟通方式：主动倾听、表达观点、寻求共识，必要时开会讨论或请教导师",
+        "解决过程：分析问题根源，权衡利弊，最终达成一致并执行",
+        "反思：从中学到的经验，如如何更有效地沟通和协作"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "技术基础",
+      "question": "请解释什么是SQL注入攻击？在Java中如何防止SQL注入？请给出一个使用JDBC或MyBatis的示例。",
+      "purpose": "考察安全意识和SQL基础，JD要求具备SQL编写能力，评估候选人对安全编码的理解。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "SQL注入：攻击者通过在输入中插入恶意SQL语句，欺骗数据库执行非授权操作",
+        "预防方法：使用预编译语句（PreparedStatement）或ORM框架的参数化查询",
+        "示例：JDBC使用PreparedStatement的setString方法设置参数；MyBatis使用#{}占位符自动转义"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "项目深挖",
+      "question": "假设你在iBOSS项目中使用Redis缓存用户会话信息，请描述Redis中常用的数据类型（String、Hash、List、Set、ZSet）及其适用场景，并说明你会选择哪种类型来存储用户会话。",
+      "purpose": "考察Redis数据类型理解和实际应用能力，JD要求熟悉Redis，评估候选人的技术选型能力。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "String：存储简单值，如用户ID对应的Token",
+        "Hash：存储对象，如用户信息（字段包括username、role、expireTime等）",
+        "List：存储有序列表，如消息队列",
+        "Set：存储无序不重复集合，如用户权限列表",
+        "ZSet：存储有序集合，如排行榜",
+        "用户会话选择：推荐使用Hash，因为可以存储多个字段，方便更新单个字段而不影响整体"
+      ]
+    }
+  ],
+  "current_question_index": 3,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "请解释Java中面向对象编程的三大特性：封装、继承和多态，并分别给出一个简单的代码示例。",
+      "category": "技术基础",
+      "answer": "【原始回答】继承就是子类继承父类的方法和属性 并且可以进行扩展   封装就是把一个方法封装起来 其他可以通过访问对象进行调用\n【追问回答】不知道啊",
+      "score": 0,
+      "feedback": "回答极其简略，仅对继承和封装做了非常表面的描述，且未提及多态，无任何代码示例。概念理解严重不足，无法体现基本掌握。追问后表示不知道，进一步确认了知识缺失。",
+      "dimensions": {
+        "技术基础": 1,
+        "项目经验": 0,
+        "场景设计": 0,
+        "软技能": 1
+      },
+      "confidence": 10,
+      "follow_up_question": "请详细解释封装、继承、多态三个特性，并分别给出一个简单的Java代码示例。比如，封装如何通过private和getter/setter实现？多态有哪些实现方式？",
+      "original_score": 1
+    },
+    {
+      "question_id": 2,
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的实现过程，以及如何处理哈希冲突。",
+      "category": "技术基础",
+      "answer": "【原始回答】hashmap 存储的是键值对对象 通过计算 一个hash值快速找到存储的地址 。\n【追问回答】这个我没有准备好",
+      "score": 1,
+      "feedback": "回答仅提到HashMap存储键值对和通过hash值快速寻址，未涉及数组+链表+红黑树结构、put/get具体流程、哈希冲突处理等核心要点。追问后承认未准备好，表明技术基础薄弱，沟通诚实但缺乏深度。综合评分偏低，与历史同类回答分布一致。",
+      "dimensions": {
+        "技术基础": 2,
+        "项目经验": 0,
+        "场景设计": 0,
+        "软技能": 2
+      },
+      "confidence": 9,
+      "follow_up_question": "请详细说明HashMap中put方法的具体步骤，包括如何计算数组索引、如何处理哈希冲突（链表与红黑树的转换条件），以及get方法如何查找元素。",
+      "original_score": 1
+    },
+    {
+      "question_id": 3,
+      "question": "请解释MySQL中索引的作用，以及B+树索引结构的特点。为什么MySQL InnoDB引擎选择B+树作为索引结构？",
+      "category": "技术基础",
+      "answer": "【原始回答】mysql索引的作用   是查询的时候可以根据索引进行快速的查询  不用全盘扫描 浪费时间    默认用b+树是 因为 如果用hash hash对单个的查找 速度非常的快 但是不支持范围查询  b+树是矮胖的多路树 非叶子节点存储着索引  叶子节点存储着数据  所以访问每个节点的速度差不多\n【追问回答】我不是说过了 因为哈希索引  本身不支持范围查询  然后b+树是通过叶子节点的串联 串联成 链表 只要找到开头的节点就可以顺着扫描下去",
+      "score": 2,
+      "feedback": "候选人基本理解了索引的作用（加速查询、避免全表扫描）和B+树的部分特点（矮胖、叶子节点存数据、非叶子节点存索引），也提到了哈希索引不支持范围查询的对比。但回答过于简略，缺乏关键细节：未提及B+树叶子节点通过链表连接、层级低减少磁盘I/O、非叶子节点可存储更多索引键等核心要点。表达上有些口语化，逻辑连贯性一般。无项目经验或场景设计内容。",
+      "dimensions": {
+        "技术基础": 3,
+        "项目经验": 0,
+        "场景设计": 0,
+        "软技能": 4
+      },
+      "confidence": 7,
+      "follow_up_question": "你能更详细地解释一下B+树叶子节点的链表结构是如何支持范围查询的吗？另外，为什么InnoDB不选择哈希索引或红黑树作为默认索引结构？请结合磁盘I/O和查询场景举例说明。",
+      "original_score": 3
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [
+      0
+    ],
+    "medium": [
+      1,
+      2
+    ],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

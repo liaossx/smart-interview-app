@@ -1,0 +1,106 @@
+{
+  "messages": [],
+  "user_id": 1,
+  "session_id": "769c638c",
+  "jd_content": "test jd",
+  "resume_content": "test resume",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "question": "Q1",
+      "category": "Java",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请解释Java中volatile关键字的作用和底层实现原理，并说明它是否能保证原子性。",
+      "purpose": "考察对Java内存模型和并发编程基础的理解，特别是volatile的可见性和有序性保证，以及其局限性。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "volatile保证变量的可见性，即一个线程修改后，其他线程能立即看到修改后的值",
+        "volatile通过内存屏障禁止指令重排序，保证有序性",
+        "volatile不保证原子性，例如i++操作不是原子操作，需要synchronized或Atomic类来保证",
+        "底层实现基于MESI缓存一致性协议和内存屏障指令"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请描述Java中HashMap的扩容机制，包括何时触发扩容、扩容过程以及为什么扩容后需要重新计算哈希值。",
+      "purpose": "考察对常用集合类底层原理的掌握，特别是HashMap的性能优化和线程安全问题。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "当元素数量超过阈值（容量*负载因子）时触发扩容，默认负载因子0.75",
+        "扩容过程：创建新数组（容量为原容量的2倍），遍历旧数组每个桶，将元素重新哈希到新数组",
+        "重新计算哈希是因为数组长度变化，需要根据新长度重新确定元素位置，否则无法正确分布",
+        "扩容是耗时的操作，且HashMap非线程安全，多线程环境下可能导致死循环或数据丢失"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "项目经验",
+      "question": "请描述你在项目中遇到的一个性能瓶颈问题，你是如何定位和解决的？请具体说明使用的工具和优化策略。",
+      "purpose": "考察候选人的问题排查能力和性能优化经验，以及是否具备系统化的分析思路。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "明确描述问题现象，如接口响应慢、CPU使用率高、内存泄漏等",
+        "使用工具定位，如JProfiler、Arthas、JVisualVM进行CPU和内存分析，或使用慢查询日志定位数据库问题",
+        "优化策略：如代码层面减少循环嵌套、使用缓存、优化SQL索引、调整JVM参数等",
+        "验证优化效果，并总结避免类似问题的经验"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "场景设计",
+      "question": "设计一个高并发场景下的秒杀系统，要求保证库存不超卖且系统稳定。请从架构、数据库、缓存、限流等方面阐述你的设计方案。",
+      "purpose": "考察候选人的系统设计能力和对高并发、分布式系统的理解，以及如何权衡一致性和可用性。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "前端：静态化页面、按钮防重复点击、CDN加速",
+        "限流：使用令牌桶或漏桶算法，对用户IP或接口进行限流",
+        "缓存：使用Redis预减库存，减少数据库压力，但需注意缓存与数据库的一致性",
+        "数据库：使用乐观锁或悲观锁控制库存扣减，或使用Redis原子操作（如DECR）",
+        "异步处理：将下单请求放入消息队列，异步扣减库存，避免直接写入数据库导致锁竞争"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "软技能",
+      "question": "假设你与团队成员在技术方案上产生严重分歧，你坚持自己的方案更优，但团队负责人倾向于另一个方案。你会如何处理这种情况？",
+      "purpose": "考察候选人的沟通能力、团队协作精神和冲突解决能力，以及是否具备理性决策的思维。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "先冷静倾听对方的观点和理由，理解其方案的优缺点",
+        "用数据和事实支持自己的方案，如性能测试结果、技术文档或成功案例",
+        "提出折中方案或进行小范围实验验证，用实际结果说服团队",
+        "如果最终决定采用对方方案，应尊重团队决策并全力配合，避免消极情绪影响工作"
+      ]
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "Q1",
+      "category": "Java",
+      "answer": "A1",
+      "score": 6,
+      "feedback": "ok"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 1,
+  "phase": "questions_ready"
+}

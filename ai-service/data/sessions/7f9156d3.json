@@ -1,0 +1,224 @@
+{
+  "messages": [],
+  "user_id": 3,
+  "session_id": "7f9156d3",
+  "jd_content": "Java backend engineer, Spring Boot, MySQL",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "Spring Boot",
+      "MySQL"
+    ],
+    "responsibilities": [],
+    "required_skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL"
+    ],
+    "experience_level": "未知",
+    "key_requirements": [],
+    "role_type": "后端开发",
+    "company_scale": "未知",
+    "company_scale_reason": "仅提供技术栈，无公司名、业务描述、薪资范围或团队规模信息",
+    "summary": "该岗位描述仅提及Java后端工程师需掌握Spring Boot和MySQL，缺乏具体职责、经验和公司背景信息。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求Java，但简历未提及任何技能或项目，需确认候选人是否具备该语言基础",
+        "depth": "深入"
+      },
+      {
+        "area": "Spring Boot",
+        "reason": "JD要求Spring Boot，但简历无相关经验，需评估候选人对该框架的理解程度",
+        "depth": "深入"
+      },
+      {
+        "area": "MySQL",
+        "reason": "JD要求MySQL，但简历无数据库相关经验，需考察SQL及数据库设计能力",
+        "depth": "一般"
+      },
+      {
+        "area": "项目经验与综合能力",
+        "reason": "简历无项目信息，需通过开放式问题了解候选人的实际开发经验和解决问题的能力",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历信息几乎空白，面试需从零开始评估候选人的技术基础。首先通过基础问题确认Java、Spring Boot和MySQL的掌握程度，然后设计场景题考察其应用能力，最后用开放式问题了解其项目经验、学习能力和职业规划。",
+    "difficulty": "medium"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的执行流程，以及当发生哈希冲突时是如何处理的？",
+      "purpose": "考察Java集合框架底层原理的理解，特别是哈希表的核心机制",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "HashMap基于数组+链表/红黑树实现",
+        "put方法通过key的hashCode计算索引，若为空则直接插入，否则处理冲突",
+        "冲突时使用链表（或红黑树）存储，JDK 8后链表长度>8且数组长度≥64时转为红黑树",
+        "get方法通过hash找到桶，然后遍历链表或红黑树查找key",
+        "扩容机制：默认负载因子0.75，当size超过阈值时扩容为2倍，并重新hash"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "Spring Boot中@SpringBootApplication注解的作用是什么？请解释它组合了哪些其他注解？",
+      "purpose": "考察对Spring Boot自动配置和核心注解的理解",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "@SpringBootApplication是一个组合注解",
+        "包含@Configuration（声明配置类）",
+        "包含@EnableAutoConfiguration（开启自动配置）",
+        "包含@ComponentScan（扫描组件）",
+        "自动配置通过spring.factories文件加载条件类"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请解释MySQL中索引的最左前缀原则，并举例说明在联合索引(a, b, c)中，哪些查询能利用索引？",
+      "purpose": "考察MySQL索引优化和SQL查询能力",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "最左前缀原则：查询条件必须从索引最左列开始，且不能跳过中间列",
+        "能利用索引的查询：where a=1；where a=1 and b=2；where a=1 and b=2 and c=3",
+        "不能利用索引：where b=2；where c=3；where b=2 and c=3",
+        "部分利用：where a=1 and c=3（只用到a列）",
+        "范围查询后失效：where a>1 and b=2（b列不生效）"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请解释Java中线程池的核心参数有哪些？并说明线程池的工作流程。",
+      "purpose": "考察多线程编程基础和线程池原理",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "核心参数：corePoolSize、maximumPoolSize、keepAliveTime、unit、workQueue、threadFactory、handler",
+        "工作流程：提交任务后，如果线程数<corePoolSize，创建新线程执行",
+        "如果达到corePoolSize，任务放入workQueue",
+        "如果队列满且线程数<maximumPoolSize，创建新线程",
+        "如果达到maximumPoolSize，执行拒绝策略",
+        "空闲线程超过keepAliveTime会被回收"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "项目深挖",
+      "question": "请描述你过去参与过的一个后端项目，包括你使用的技术栈、承担的角色以及遇到的一个技术难点和解决方案。",
+      "purpose": "由于简历空白，通过开放式问题了解候选人的实际项目经验和解决问题能力",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "明确项目背景和目标",
+        "清晰描述自己的角色和贡献",
+        "具体的技术难点，如性能瓶颈、并发问题、数据一致性等",
+        "解决方案的思路和最终效果",
+        "体现团队协作和沟通能力"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "项目深挖",
+      "question": "在项目中使用Spring Boot时，你是如何配置数据源的？有没有遇到过连接池相关问题，如何排查和解决？",
+      "purpose": "考察Spring Boot实战经验，特别是数据库连接配置和问题排查能力",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "配置数据源：在application.yml中配置url、username、password、driver-class-name",
+        "使用HikariCP或Druid等连接池，并设置合理参数如maximum-pool-size",
+        "常见问题：连接泄漏、连接超时、连接池耗尽",
+        "排查方法：启用SQL日志、监控连接池状态、分析慢查询",
+        "解决方案：调大连接池、优化SQL、使用连接池监控工具"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "场景设计",
+      "question": "假设要设计一个短链接生成服务，用户输入长链接，系统返回短链接，并支持访问统计。请描述后端架构设计，包括表结构、存储方案和核心接口。",
+      "purpose": "考察系统设计能力，结合JD技术栈（Java、Spring Boot、MySQL）",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "表结构：短链接表（id、长链接、短码、创建时间、过期时间）、访问日志表（短码、访问时间、IP、设备等）",
+        "短码生成：使用自增ID+Base62编码或哈希+冲突处理",
+        "核心接口：createShortLink（接收长链接，返回短链接）、redirect（短码重定向）",
+        "高性能：缓存热点短码（Redis）、异步写入访问日志",
+        "扩展性：考虑分库分表、读写分离"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "场景设计",
+      "question": "在一个电商系统中，用户同时下单可能导致库存超卖。请设计一个库存扣减方案，要求保证数据一致性且性能良好。",
+      "purpose": "考察并发控制和数据一致性设计能力",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "使用数据库乐观锁：update stock set version=version+1 where id=? and version=?",
+        "使用Redis分布式锁：SETNX加锁，扣减库存后释放",
+        "使用Redis原子操作：DECR扣减库存，但需考虑持久化",
+        "结合消息队列异步扣减：下单成功发送消息，消费端扣减库存",
+        "最终一致性方案：允许超卖，后续通过补偿机制处理",
+        "性能优化：库存预热到Redis，减少数据库压力"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "软技能",
+      "question": "当你在开发过程中遇到一个无法解决的Bug，你会如何寻求帮助？请描述你的排查步骤和求助策略。",
+      "purpose": "考察问题解决能力和团队协作能力",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "独立排查：阅读日志、复现问题、断点调试、分析代码",
+        "查阅资料：搜索文档、Stack Overflow、GitHub Issues",
+        "求助同事：清晰描述问题上下文、已尝试的步骤、期望的结果",
+        "向上反馈：如果影响进度，及时告知项目负责人",
+        "记录总结：解决问题后记录原因和解决方案，分享团队"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "你最近学习了哪些新技术或框架？请举例说明你是如何学习的，以及如何应用到实际工作中。",
+      "purpose": "考察学习能力和技术热情",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "列举具体技术，如Redis、Docker、Kubernetes等",
+        "学习方法：官方文档、在线课程、动手实践、参与开源项目",
+        "应用场景：在项目中引入新技术解决实际问题",
+        "学习成果：性能提升、开发效率提高等可量化效果",
+        "持续学习的态度：订阅技术博客、参加技术社区"
+      ]
+    }
+  ],
+  "current_question_index": 0,
+  "answers": [],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {
+    "question": "请详细解释HashMap的put方法执行流程，包括如何通过hashCode计算数组索引、如何处理哈希冲突（链表与红黑树转换条件）、以及扩容机制的具体实现。",
+    "original_answer": "HashMap uses put and get. Its good.",
+    "score_so_far": 0
+  },
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

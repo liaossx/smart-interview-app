@@ -1,0 +1,274 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "2f63aa67",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA"
+    ],
+    "responsibilities": [
+      "参与iBOSS项目Java开发，包括代码开发、功能迭代、接口联调、代码注释及技术文档编写",
+      "配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改"
+    ],
+    "required_skills": [
+      "熟悉软件工程开发流程和基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言",
+      "熟悉SpringBoot框架优先",
+      "接触过后端开发常用技术及工具",
+      "了解Postman、Git、Maven、IDEA",
+      "熟悉MySQL、Redis优先"
+    ],
+    "experience_level": "校招",
+    "key_requirements": [
+      "应届毕业生，本科及以上学历",
+      "通信、计算机、电子信息、软件工程等相关专业",
+      "性格开朗，学习及语言表达能力强",
+      "善于与人沟通、交流"
+    ],
+    "role_type": "后端开发",
+    "company_scale": "大厂",
+    "company_scale_reason": "公司名称为中国移动国际公司，中国移动为大型央企，属于大厂范畴",
+    "summary": "该岗位为中国移动国际公司面向应届毕业生的Java后端开发校招职位，主要参与iBOSS项目开发，要求掌握Java、SpringBoot、MySQL等后端技术，具备良好的沟通和学习能力。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "SQL",
+      "软件工程开发流程",
+      "代码开发规范",
+      "技术文档编写",
+      "缺陷修复",
+      "问题排查",
+      "接口联调"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求熟练掌握Java，但简历无任何Java相关技能或项目，需确认候选人是否具备基本编程能力",
+        "depth": "深入"
+      },
+      {
+        "area": "SpringBoot框架",
+        "reason": "JD优先考虑熟悉SpringBoot的候选人，简历无相关经验，需考察了解程度",
+        "depth": "一般"
+      },
+      {
+        "area": "数据库基础（MySQL/Redis）",
+        "reason": "JD要求熟悉MySQL和Redis，简历无体现，需考察SQL编写和缓存概念",
+        "depth": "一般"
+      },
+      {
+        "area": "Linux和Shell",
+        "reason": "JD要求了解Linux常用命令和简单Shell脚本，简历无相关经验",
+        "depth": "了解"
+      },
+      {
+        "area": "开发工具使用（Postman/Git/Maven/IDEA）",
+        "reason": "JD要求了解这些工具，简历无提及，需考察基本使用经验",
+        "depth": "了解"
+      },
+      {
+        "area": "沟通与学习能力",
+        "reason": "JD强调性格开朗、学习及语言表达能力强，简历无项目或实习经历，需通过面试评估软素质",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历完全空白，面试应重点考察候选人的Java基础知识和编程思维，同时通过开放性问题评估其学习能力和沟通意愿。建议从简单概念题入手，逐步深入，并设置一道简单的编程题（如字符串反转或数组排序）来验证实际编码能力。对于SpringBoot、MySQL等JD要求的技术，可询问是否了解或自学过，以判断其主动学习能力。最后通过情景题（如如何排查一个Bug）考察问题解决思路。",
+    "difficulty": "easy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的执行流程，以及它如何解决哈希冲突？",
+      "purpose": "考察对Java集合框架核心类的理解，包括哈希表原理、冲突解决机制（链地址法）以及JDK 8中引入的红黑树优化。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "HashMap基于数组+链表/红黑树实现，初始容量为16，负载因子0.75。",
+        "put方法通过key的hashCode计算桶索引，若桶为空则直接插入，否则遍历链表/红黑树查找相同key并覆盖，否则追加。",
+        "当链表长度≥8且数组长度≥64时，链表转为红黑树以提升查询效率。",
+        "get方法类似，通过key的hash定位桶，然后遍历链表/红黑树查找equals相等的key。"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请描述Java线程池的核心参数（如corePoolSize、maximumPoolSize、workQueue等）以及线程池的执行流程。如果一个任务被拒绝，会发生什么？",
+      "purpose": "考察对并发编程中线程池的理解，包括参数含义、工作流程和拒绝策略。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "核心参数：corePoolSize（核心线程数）、maximumPoolSize（最大线程数）、keepAliveTime（空闲线程存活时间）、unit、workQueue（任务队列）、threadFactory、handler（拒绝策略）。",
+        "执行流程：当提交任务时，先判断当前线程数是否小于corePoolSize，是则创建新线程执行；否则尝试将任务加入workQueue；若队列满，则判断是否小于maximumPoolSize，是则创建新线程；否则执行拒绝策略。",
+        "拒绝策略包括AbortPolicy（抛出异常）、CallerRunsPolicy（调用者线程执行）、DiscardPolicy（丢弃）、DiscardOldestPolicy（丢弃队列中最旧的任务）。"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请解释MySQL的索引结构，为什么InnoDB选择B+树而不是B树或哈希索引？并说明聚簇索引和非聚簇索引的区别。",
+      "purpose": "考察数据库索引底层原理，包括B+树特性及其优势。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "InnoDB使用B+树作为索引结构，所有数据存储在叶子节点，非叶子节点只存索引键，叶子节点通过链表连接。",
+        "相比B树：B+树非叶子节点不存数据，能存储更多索引键，降低树高；叶子节点链表支持范围查询和排序。",
+        "相比哈希索引：哈希索引只支持等值查询，不支持范围查询和排序，且无法利用最左前缀原则。",
+        "聚簇索引：索引和数据存储在一起，表必须有主键，叶子节点存储完整行数据。非聚簇索引：索引和数据分离，叶子节点存储主键值，查询时需回表。"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请解释Redis的持久化机制RDB和AOF，它们各自的优缺点是什么？在实际生产环境中如何选择？",
+      "purpose": "考察对Redis持久化原理的理解，包括RDB快照和AOF日志的工作方式。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "RDB：通过创建子进程生成全量快照，文件紧凑，恢复速度快；但可能丢失最后一次快照后的数据。",
+        "AOF：记录每次写操作，数据安全性高，可配置fsync策略；但文件体积大，恢复速度慢。",
+        "生产环境建议同时开启两者，或根据数据重要性选择：允许少量丢失则用RDB，要求高可靠性则用AOF。"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "技术基础",
+      "question": "请编写一个Java方法，实现字符串反转功能（例如输入'hello'，输出'olleh'），并分析其时间复杂度。",
+      "purpose": "考察基础编程能力和算法复杂度分析，验证候选人是否具备实际编码能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "方法一：使用StringBuilder的reverse()方法，时间复杂度O(n)。",
+        "方法二：手动遍历字符串，从末尾开始构建新字符串，时间复杂度O(n)。",
+        "方法三：将字符串转为字符数组，双指针交换，时间复杂度O(n)，空间复杂度O(n)。"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "项目深挖",
+      "question": "假设你参与了一个Java Web项目，现在需要排查一个线上内存泄漏问题，请描述你的排查思路和工具使用。",
+      "purpose": "考察问题排查能力，虽然简历无项目，但假设性场景可评估思维逻辑。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "首先通过监控工具（如JVM的jstat、jmap）观察堆内存使用趋势。",
+        "使用jmap生成堆转储快照（heap dump），然后用MAT或VisualVM分析大对象或GC Roots引用链。",
+        "检查代码中是否存在未关闭的资源（如数据库连接、文件流）、静态集合类持有对象、不正确的单例模式等。",
+        "修复后通过压力测试验证是否持续泄漏。"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "项目深挖",
+      "question": "请描述你曾经参与的一个项目（可以是课程设计或实习），你在其中承担了什么角色，遇到了哪些技术挑战，是如何解决的？",
+      "purpose": "评估候选人的项目经验、问题解决能力和沟通表达能力，弥补简历空白。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "清晰描述项目背景、技术栈（如SpringBoot、MySQL）。",
+        "说明个人职责（如后端接口开发、数据库设计）。",
+        "举例一个具体问题（如接口响应慢），通过分析SQL或添加缓存解决。",
+        "体现团队协作和主动学习能力。"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "场景设计",
+      "question": "在设计一个高并发的短链接生成系统时，如何确保短链接的唯一性和高性能？请给出你的技术方案。",
+      "purpose": "考察系统设计能力，包括分布式ID生成、缓存策略和数据库设计。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "使用分布式ID生成器（如雪花算法或Redis incr）生成唯一短码。",
+        "写入数据库时使用唯一索引防止重复，并考虑批量插入优化。",
+        "使用Redis缓存热点短链接映射，设置合理过期时间，降低数据库压力。",
+        "系统架构可采用预生成ID池或发号器模式提升性能。"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "场景设计",
+      "question": "如果让你从零搭建一个SpringBoot项目，你会如何进行技术选型？请列出你考虑的因素和选择的组件。",
+      "purpose": "考察全栈能力和技术选型思维，评估候选人对开发工具链的理解。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "考虑因素：项目规模、团队技术栈、性能要求、社区活跃度等。",
+        "选择SpringBoot作为基础框架，MyBatis或JPA作为ORM，MySQL作为数据库，Redis作为缓存。",
+        "使用Maven/Gradle构建，Git版本控制，Postman测试接口。",
+        "考虑使用Lombok简化代码，Swagger生成API文档。"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "当开发任务时间紧迫，同时需要修复一个线上紧急Bug，你会如何安排工作优先级？请举例说明。",
+      "purpose": "考察时间管理、压力应对和沟通协调能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "评估Bug严重性和影响范围，如果影响用户使用则优先修复。",
+        "与项目经理沟通，调整开发任务的时间安排。",
+        "修复Bug后立即回归测试，确保不引入新问题。",
+        "记录Bug原因，避免同类问题再次发生。"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "软技能",
+      "question": "你如何看待团队合作中代码规范的重要性？如果你发现同事的代码不符合规范，你会怎么处理？",
+      "purpose": "考察协作意识和沟通技巧。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "代码规范提高可读性和可维护性，减少Bug。",
+        "先私下友好提醒，分享规范文档或工具（如Checkstyle）。",
+        "如果普遍问题，建议团队进行Code Review或制定统一规范。",
+        "保持尊重，避免公开指责。"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "技术基础",
+      "question": "请解释Spring Boot的自动配置原理，以及如何自定义一个Starter。",
+      "purpose": "考察对Spring Boot核心机制的理解，包括@EnableAutoConfiguration和条件注解。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "Spring Boot通过@EnableAutoConfiguration导入AutoConfigurationImportSelector，加载META-INF/spring.factories中的配置类。",
+        "配置类使用@ConditionalOnClass、@ConditionalOnMissingBean等条件注解实现按需加载。",
+        "自定义Starter需要创建一个自动配置类，在spring.factories中注册，并提供配置属性和默认值。"
+      ]
+    }
+  ],
+  "current_question_index": 0,
+  "answers": [],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

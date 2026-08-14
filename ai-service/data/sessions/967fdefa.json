@@ -1,0 +1,268 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "967fdefa",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "Linux",
+      "Shell"
+    ],
+    "responsibilities": [
+      "参与中国移动国际公司iBOSS项目Java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写",
+      "配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改"
+    ],
+    "required_skills": [
+      "熟悉软件工程开发流程、基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言",
+      "熟悉SpringBoot框架者优先",
+      "接触过后端开发常用技术及工具",
+      "了解Postman、Git、Maven、IDEA",
+      "熟悉MySQL、Redis者优先",
+      "性格开朗，学习及语言表达能力强，善于与人沟通、交流"
+    ],
+    "experience_level": "校招",
+    "key_requirements": [
+      "应届毕业生",
+      "本科及以上学历",
+      "通信、计算机、电子信息、软件工程等相关专业"
+    ],
+    "role_type": "后端开发",
+    "company_scale": "大厂",
+    "company_scale_reason": "公司名称为中国移动国际公司，中国移动为知名大型央企，属于大厂范畴",
+    "summary": "该岗位为中国移动国际公司iBOSS项目的Java后端开发校招岗位，要求应届毕业生，熟悉Java、SpringBoot、MySQL等后端技术，负责代码开发、功能迭代及缺陷修复等工作。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "Linux",
+      "Shell",
+      "SQL",
+      "软件工程开发流程",
+      "代码开发规范",
+      "后端开发常用技术及工具"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求熟练掌握Java，但简历无相关技能，需评估候选人基础能力",
+        "depth": "深入"
+      },
+      {
+        "area": "SpringBoot框架",
+        "reason": "JD优先考虑熟悉SpringBoot者，需考察候选人是否具备框架使用经验",
+        "depth": "一般"
+      },
+      {
+        "area": "数据库与缓存",
+        "reason": "JD要求SQL编写能力并优先熟悉MySQL和Redis，需考察基础掌握程度",
+        "depth": "一般"
+      },
+      {
+        "area": "开发工具与流程",
+        "reason": "JD要求了解Postman、Git、Maven、IDEA及软件工程流程，需确认候选人是否有相关认知",
+        "depth": "了解"
+      },
+      {
+        "area": "Linux与Shell",
+        "reason": "JD要求了解Linux常用命令及简单Shell脚本，需考察基础操作能力",
+        "depth": "了解"
+      },
+      {
+        "area": "沟通与学习能力",
+        "reason": "JD强调性格开朗、学习及语言表达能力强，需通过面试表现评估",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历完全空白，面试应作为纯校招基础能力评估。重点考察Java核心语法、面向对象思想、集合框架、异常处理等基础知识；SpringBoot方面考察IoC、AOP等核心概念；数据库考察SQL基本操作和索引原理；开发工具和Linux仅做概念性提问。同时通过开放式问题评估学习意愿和沟通能力。",
+    "difficulty": "easy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中==和equals()的区别，并举例说明在String比较中的应用。",
+      "purpose": "考察Java基础语法和对象比较的底层理解",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "==比较基本类型时比较值，比较引用类型时比较内存地址",
+        "equals()是Object类的方法，默认比较引用地址，但String等类重写后比较内容",
+        "举例：String a = new String(\"abc\"); String b = new String(\"abc\"); a==b为false，a.equals(b)为true"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请描述HashMap的底层数据结构，以及put操作的执行过程。",
+      "purpose": "考察集合框架核心原理和数据结构理解",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "底层是数组+链表/红黑树（JDK 1.8后）",
+        "put过程：计算key的hash值，定位数组索引，处理hash冲突（链表或红黑树），扩容机制（负载因子0.75）",
+        "提及红黑树化条件（链表长度>=8且数组长度>=64）"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "Java中创建线程有哪些方式？请说明它们的优缺点。",
+      "purpose": "考察多线程基础知识和并发编程理解",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "继承Thread类、实现Runnable接口、实现Callable接口（带返回值）、使用线程池",
+        "优缺点：继承Thread简单但单继承限制；实现Runnable解耦但无返回值；Callable可返回结果但使用复杂；线程池管理线程复用"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请解释Spring Boot中的自动配置原理，并举例说明如何自定义一个starter。",
+      "purpose": "考察Spring Boot框架核心机制的理解",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "基于@EnableAutoConfiguration和spring.factories文件加载配置类",
+        "条件注解@ConditionalOnClass、@ConditionalOnMissingBean等控制加载时机",
+        "自定义starter步骤：创建自动配置类、定义属性类、配置spring.factories"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "场景设计",
+      "question": "假设iBOSS项目中有一个用户缴费接口，需要保证高并发下的数据一致性，你会如何设计？",
+      "purpose": "考察并发场景下的系统设计能力和数据库事务理解",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "使用数据库事务保证原子性（如MySQL的ACID）",
+        "结合Redis分布式锁或乐观锁（版本号）防止超扣",
+        "考虑消息队列异步处理（如RocketMQ）降低数据库压力",
+        "提及幂等性设计（唯一流水号）避免重复支付"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "场景设计",
+      "question": "请设计一个简单的RESTful API接口，用于查询用户订单列表，要求支持分页和按时间排序。请写出接口定义和SQL语句。",
+      "purpose": "考察后端开发实战能力和SQL编写能力",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "接口定义：GET /orders?userId=xxx&page=1&size=10&sort=createTime",
+        "SQL语句：SELECT * FROM orders WHERE user_id = ? ORDER BY create_time DESC LIMIT ?, ?",
+        "考虑使用索引优化排序和分页"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "场景设计",
+      "question": "在项目开发中，你发现一个接口响应时间过长，如何定位并优化？请描述你的排查思路。",
+      "purpose": "考察问题排查和性能调优能力",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "使用工具（如Arthas、JProfiler）监控CPU、内存、线程状态",
+        "分析日志，查找慢SQL（开启MySQL慢查询日志）",
+        "检查代码逻辑，如循环调用、频繁IO、锁竞争等",
+        "优化方案：加索引、缓存、异步处理、连接池调优"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "技术基础",
+      "question": "请解释MySQL中索引的底层数据结构（如B+树），并说明为什么适合用于数据库索引。",
+      "purpose": "考察数据库索引原理和数据结构基础",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "B+树是多路平衡查找树，所有数据存储在叶子节点，非叶子节点只存索引",
+        "优点：树高度低，减少磁盘IO；叶子节点有序链表，支持范围查询",
+        "对比B树：B+树非叶子节点不存数据，更稳定高效"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "技术基础",
+      "question": "请解释Redis中String类型和Hash类型的区别，并举例说明在项目中的使用场景。",
+      "purpose": "考察Redis基础数据结构和实际应用能力",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "String：简单key-value，适合缓存单个值（如验证码、计数器）",
+        "Hash：存储多个字段的对象，适合缓存实体对象（如用户信息）",
+        "区别：Hash内存占用更小，支持部分更新"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "如果你在开发中遇到一个技术难题，自己无法解决，你会怎么做？请描述你的处理步骤。",
+      "purpose": "考察学习能力和问题解决能力",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "首先通过搜索引擎（如Google、Stack Overflow）查找相关资料",
+        "查阅官方文档或开源项目社区",
+        "向同事或导师请教，描述具体问题和已尝试的方法",
+        "总结并记录解决方案，形成知识沉淀"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "技术基础",
+      "question": "请解释Linux中常用命令（如top, grep, find, chmod）的功能和使用场景。",
+      "purpose": "考察Linux基础操作能力",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "top：查看系统进程和资源占用",
+        "grep：文本搜索，常用于查找日志内容",
+        "find：查找文件或目录",
+        "chmod：修改文件权限，如chmod 755"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "技术基础",
+      "question": "请描述Git中git add, git commit, git push, git pull的基本功能以及协作开发中的常用流程（如feature分支合并到master）。",
+      "purpose": "考察版本控制工具的基础理解",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "git add：将修改放入暂存区",
+        "git commit：提交到本地仓库",
+        "git push：推送到远程仓库",
+        "git pull：拉取远程更新",
+        "协作流程：创建feature分支开发，完成后发起Pull Request，审核后合并到master"
+      ]
+    }
+  ],
+  "current_question_index": 0,
+  "answers": [],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

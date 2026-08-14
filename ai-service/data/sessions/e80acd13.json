@@ -1,0 +1,198 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "e80acd13",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的具体执行过程。",
+      "purpose": "考察对Java集合框架核心数据结构的理解，特别是哈希表的底层实现。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "HashMap基于数组+链表/红黑树实现",
+        "put方法先计算key的hash值，确定数组索引，处理hash冲突",
+        "get方法根据key的hash值和equals方法查找元素",
+        "扩容机制（负载因子0.75，扩容为原容量2倍）"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "Java中的线程池有哪些核心参数？请解释它们的作用以及一个任务提交后的执行流程。",
+      "purpose": "考察对线程池原理的理解，这是并发编程的基础。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "核心参数：corePoolSize、maximumPoolSize、keepAliveTime、workQueue、threadFactory、handler",
+        "任务提交流程：先判断核心线程数，再入队列，再判断最大线程数，最后拒绝策略",
+        "常见的拒绝策略有AbortPolicy、CallerRunsPolicy等"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请解释MySQL中索引（B+树）的结构，以及为什么使用B+树作为索引结构。",
+      "purpose": "考察对数据库索引底层原理的理解，这是SQL优化的基础。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "B+树是多路平衡查找树，所有数据存储在叶子节点",
+        "叶子节点形成有序链表，支持范围查询",
+        "B+树高度低，磁盘I/O次数少",
+        "相对B树，B+树非叶子节点不存数据，能存储更多索引"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "项目深挖",
+      "question": "请描述你参与过的一个Java项目，包括你负责的模块、使用的技术栈以及遇到的挑战。",
+      "purpose": "评估候选人的项目经验、技术应用和问题解决能力，即使简历空白，也考察其如何描述学习项目。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "清晰描述项目背景和自身角色",
+        "列举使用的技术（如SpringBoot、MySQL、Redis等）",
+        "具体说明遇到的挑战和解决思路",
+        "体现对项目流程的理解"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "项目深挖",
+      "question": "在项目开发中，你是如何进行接口联调的？请举例说明。",
+      "purpose": "考察实际协作能力，尤其是与前端或其他后端服务的接口对接经验。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "使用Postman等工具模拟请求测试接口",
+        "提前约定接口规范（如RESTful、参数、返回格式）",
+        "处理联调中的异常和错误",
+        "通过日志和调试工具定位问题"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "场景设计",
+      "question": "假设iBOSS项目中需要设计一个用户登录功能，你会如何设计？需要考虑哪些安全因素？",
+      "purpose": "考察业务需求分析和系统设计能力，结合JD中的项目背景。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "使用Spring Security或JWT实现认证",
+        "密码加密存储（如BCrypt）",
+        "防止暴力破解（验证码、限制登录次数）",
+        "考虑会话管理和Token刷新"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "场景设计",
+      "question": "线上出现一个Bug：某个接口响应时间突然变长，你会如何排查？请列出你的排查步骤。",
+      "purpose": "考察问题排查和性能调优的实战能力。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "检查服务器CPU、内存、磁盘等资源",
+        "查看应用日志和慢SQL日志",
+        "使用profile工具分析热点方法",
+        "检查缓存是否失效或数据库连接池耗尽"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "场景设计",
+      "question": "请解释Redis中String、List、Set、Zset、Hash这五种数据结构的典型应用场景。",
+      "purpose": "考察对Redis常用数据结构的理解，这是后端开发必备技能。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "String：缓存、计数器",
+        "List：消息队列、最新列表",
+        "Set：去重、共同好友",
+        "Zset：排行榜、延时队列",
+        "Hash：存储对象"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "技术基础",
+      "question": "Linux中如何查看进程的CPU和内存使用情况？如何查找包含特定关键词的日志文件？",
+      "purpose": "考察Linux基本命令使用，这是日常运维和问题排查的基础。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "使用top、ps命令查看进程资源",
+        "使用free、df查看内存和磁盘",
+        "使用grep命令在日志文件中搜索关键词",
+        "结合tail、less等命令查看日志内容"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "你如何保持对新技术的学习？请举一个你最近学习新技术的例子。",
+      "purpose": "评估候选人的学习能力和主动性，校招中尤为重要。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "通过官方文档、技术博客、视频课程学习",
+        "动手实践，做小项目或Demo",
+        "参与社区讨论或技术分享",
+        "具体举例说明学习过程和成果"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "技术基础",
+      "question": "请解释SpringBoot的自动配置原理，以@SpringBootApplication注解为例。",
+      "purpose": "考察对SpringBoot核心机制的理解，这是框架使用的基础。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "@SpringBootApplication包含@Configuration、@EnableAutoConfiguration、@ComponentScan",
+        "@EnableAutoConfiguration通过SpringFactoriesLoader加载META-INF/spring.factories中的配置类",
+        "条件注解（如@ConditionalOnClass）控制配置生效",
+        "最终创建并注册相应的Bean"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "软技能",
+      "question": "如果你和测试人员在Bug定级上产生分歧，你会怎么处理？",
+      "purpose": "考察沟通协作能力和冲突解决能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "先了解测试人员的定级依据",
+        "基于技术影响和业务影响进行分析",
+        "与测试人员协商，必要时请产品经理或技术经理仲裁",
+        "保持良好的沟通态度，以解决问题为目标"
+      ]
+    }
+  ],
+  "current_question_index": 2,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的具体执行过程。",
+      "category": "技术基础",
+      "answer": "【原始回答】不知道啊 请你解释\n【追问回答】hash表 是一个通过计算出存放 位置",
+      "score": 0,
+      "feedback": "候选人对HashMap的工作原理几乎没有掌握，原始回答直接表示不知道，追问后仅给出非常模糊且不准确的描述（'hash表是一个通过计算出存放位置'），未能涉及数组+链表/红黑树、put/get具体过程、扩容机制等任何核心要点。技术基础薄弱，表达缺乏逻辑和细节。"
+    },
+    {
+      "question_id": 2,
+      "question": "Java中的线程池有哪些核心参数？请解释它们的作用以及一个任务提交后的执行流程。",
+      "category": "技术基础",
+      "answer": "【原始回答】有xms  xmx  默认线程大小 和最大线程大小\n【追问回答】核心参数不就是 xms  和xmx吗",
+      "score": 0,
+      "feedback": "候选人对Java线程池核心参数的理解完全错误，将JVM内存参数（-Xms、-Xmx）误认为是线程池参数，且在被追问后仍坚持错误认知，表明缺乏基本的技术基础。回答未涉及任何期望要点，无法评分。"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 2,
+  "phase": "questions_ready"
+}

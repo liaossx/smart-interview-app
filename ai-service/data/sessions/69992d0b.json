@@ -1,0 +1,24 @@
+{
+  "messages": [],
+  "user_id": 3,
+  "session_id": "69992d0b",
+  "jd_content": "test",
+  "resume_content": "",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [],
+  "current_question_index": 0,
+  "answers": [],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

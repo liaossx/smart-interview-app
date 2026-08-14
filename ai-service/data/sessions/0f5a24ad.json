@@ -1,0 +1,114 @@
+{
+  "messages": [],
+  "user_id": 1,
+  "session_id": "0f5a24ad",
+  "jd_content": "Senior Java developer, Spring Boot, microservices, cloud-native",
+  "resume_content": "3 years Java, Spring Boot, MySQL",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "question": "Q1",
+      "category": "Java",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    },
+    {
+      "question": "Q2",
+      "category": "Spring",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "在Spring Boot微服务架构中，如何实现服务间的异步通信？请对比几种常见方案并说明适用场景。",
+      "purpose": "考察候选人对微服务间通信模式的理解，特别是异步消息机制，这是简历中未体现的领域。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "能列举至少两种异步通信方案，如消息队列（RabbitMQ/Kafka）和事件驱动架构（Spring Cloud Stream）。",
+        "对比同步（REST/gRPC）与异步的优缺点：异步提高解耦和可伸缩性，但增加最终一致性和调试复杂度。",
+        "说明适用场景：高吞吐、削峰填谷、跨服务状态同步使用消息队列；实时性要求高、简单请求使用同步。"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "在云原生环境中，如何设计一个无状态微服务以支持水平扩展？请结合Spring Boot和Kubernetes说明关键点。",
+      "purpose": "考察候选人对云原生架构的理解，特别是无状态设计和容器化部署，这是简历中缺少的cloud-native经验。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "解释无状态的含义：服务不保存会话或业务状态在本地，所有状态外置到数据库、缓存或对象存储。",
+        "Spring Boot中通过禁用session、使用JWT令牌、配置外部化（如ConfigMap）实现无状态。",
+        "Kubernetes中通过Deployment管理副本、HPA自动扩缩、Service负载均衡，确保任意Pod可处理请求。"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "场景设计",
+      "question": "假设你负责将一个单体应用拆分为多个微服务，其中一个服务需要频繁读取MySQL中的配置数据，且配置变更不频繁。你会如何优化该服务的性能？请设计一个缓存方案。",
+      "purpose": "考察候选人在微服务场景下的缓存设计能力，结合其MySQL经验，评估对缓存策略和一致性的理解。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "引入本地缓存（如Caffeine）或分布式缓存（Redis）减少数据库查询。",
+        "设计缓存更新策略：配置变更时通过消息队列通知所有服务实例刷新缓存，或使用短TTL（如5分钟）兜底。",
+        "考虑缓存穿透、雪崩的防护：布隆过滤器、缓存预热、设置随机过期时间。"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "项目经验",
+      "question": "请描述一个你使用Spring Boot和MySQL开发的项目中，遇到的最复杂的数据库性能问题，以及你是如何定位和解决的？",
+      "purpose": "考察候选人的实际项目经验深度，特别是问题排查和优化能力，弥补简历中缺乏性能调优细节的不足。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "具体描述问题现象（如慢查询、高CPU、锁等待），并说明定位工具（慢查询日志、EXPLAIN、Arthas）。",
+        "分析根因（如缺少索引、N+1查询、大事务），并给出解决方案（加索引、批量操作、分页优化）。",
+        "展示优化效果（如查询时间从5秒降到50毫秒），并总结预防措施（代码审查、监控告警）。"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "软技能",
+      "question": "在一个微服务架构的团队中，你发现某个同事负责的服务接口设计不合理，导致你的服务调用时频繁超时。你会如何沟通并推动改进？",
+      "purpose": "考察候选人的跨团队协作和冲突解决能力，这是简历中未体现的软技能。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "先收集数据（超时日志、调用链追踪）客观描述问题，避免主观指责。",
+        "主动与同事沟通，提出具体改进建议（如增加超时配置、优化接口响应时间、改为异步调用）。",
+        "推动达成共识，必要时升级到技术负责人或组织技术评审，确保方案落地。"
+      ]
+    }
+  ],
+  "current_question_index": 2,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "Q1",
+      "category": "Java",
+      "answer": "A1",
+      "score": 6,
+      "feedback": "average"
+    },
+    {
+      "question_id": 2,
+      "question": "Q2",
+      "category": "Spring",
+      "answer": "A2",
+      "score": 7,
+      "feedback": "good"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 2,
+  "phase": "questions_ready"
+}

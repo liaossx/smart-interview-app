@@ -1,0 +1,286 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "200864a1",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA"
+    ],
+    "responsibilities": [
+      "参与iBOSS项目Java开发，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写",
+      "配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改"
+    ],
+    "required_skills": [
+      "熟悉软件工程开发流程和基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言",
+      "熟悉SpringBoot框架者优先",
+      "接触过后端开发常用技术及工具",
+      "了解Postman、Git、Maven、IDEA",
+      "熟悉MySQL、Redis者优先",
+      "性格开朗，学习及语言表达能力强，善于与人沟通交流"
+    ],
+    "experience_level": "校招",
+    "key_requirements": [
+      "应届毕业生",
+      "本科及以上学历",
+      "通信、计算机、电子信息、软件工程等相关专业"
+    ],
+    "role_type": "后端开发",
+    "company_scale": "大厂",
+    "company_scale_reason": "公司名称为中国移动国际公司，中国移动为知名大型国企，属于大厂范畴",
+    "summary": "该岗位为中国移动国际公司面向应届毕业生的Java后端开发校招职位，参与iBOSS项目开发，要求掌握Java、SpringBoot、MySQL等后端技术，具备良好的沟通和学习能力。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "SQL编写",
+      "软件工程开发流程",
+      "代码开发规范",
+      "沟通能力"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求熟练掌握Java，但简历无任何技能或项目，需考察候选人是否具备基本编程能力",
+        "depth": "深入"
+      },
+      {
+        "area": "SpringBoot框架",
+        "reason": "JD优先考虑熟悉SpringBoot的候选人，需了解候选人是否接触过该框架",
+        "depth": "一般"
+      },
+      {
+        "area": "数据库与SQL",
+        "reason": "JD要求具备SQL编写能力，并优先考虑熟悉MySQL和Redis的候选人",
+        "depth": "一般"
+      },
+      {
+        "area": "Linux与Shell",
+        "reason": "JD要求了解Linux常用命令及简单Shell脚本",
+        "depth": "了解"
+      },
+      {
+        "area": "开发工具与流程",
+        "reason": "JD要求了解Postman、Git、Maven、IDEA等工具及软件工程开发流程",
+        "depth": "了解"
+      },
+      {
+        "area": "学习能力与沟通",
+        "reason": "JD强调性格开朗、学习及语言表达能力强，且简历空白，需评估候选人的潜力和态度",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历完全空白，面试应重点考察候选人的Java基础知识和学习潜力。从基础语法、面向对象、集合框架等核心概念入手，逐步深入到SpringBoot、数据库、Linux等JD要求的技术栈。同时设计开放性问题评估沟通能力和学习意愿。整体策略是验证候选人是否具备校招岗位所需的基础能力和可培养性。",
+    "difficulty": "easy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的执行过程，并说明当发生哈希冲突时是如何解决的。",
+      "purpose": "考察对Java基础集合框架的理解，特别是HashMap的底层实现，这是大厂面试的经典题目。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "HashMap基于哈希表实现，数组+链表/红黑树结构",
+        "put过程：计算key的hash值，定位数组索引，处理冲突（链表尾部插入或红黑树转换）",
+        "get过程：计算hash值定位索引，遍历链表/红黑树查找key",
+        "哈希冲突解决：链地址法，当链表长度>=8且数组长度>=64时转为红黑树",
+        "扩容机制：负载因子0.75，扩容时重新哈希"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请解释Java中线程池的核心参数及其作用，并说明如何合理配置线程池大小。",
+      "purpose": "考察多线程和并发编程基础，线程池是Java并发编程的核心知识点。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "核心参数：corePoolSize（核心线程数）、maximumPoolSize（最大线程数）、keepAliveTime（空闲线程存活时间）、workQueue（任务队列）、ThreadFactory（线程工厂）、RejectedExecutionHandler（拒绝策略）",
+        "工作流程：当提交任务时，先判断核心线程是否已满，再判断队列是否已满，最后判断最大线程数",
+        "合理配置：根据任务类型（CPU密集型、IO密集型）调整，CPU密集型推荐corePoolSize=CPU核数+1，IO密集型推荐corePoolSize=2*CPU核数",
+        "拒绝策略：AbortPolicy（抛出异常）、CallerRunsPolicy（调用者线程执行）、DiscardPolicy（丢弃）、DiscardOldestPolicy（丢弃最旧任务）"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请解释MySQL的索引结构，为什么使用B+树而非其他数据结构？并举例说明如何优化SQL查询。",
+      "purpose": "考察数据库基础知识，索引是MySQL性能优化的关键，大厂常考。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "MySQL InnoDB使用B+树作为索引结构，叶子节点存储数据，非叶子节点存储键值",
+        "B+树优势：树高较低（减少IO次数）、范围查询高效（叶子节点链表）、数据稳定性高",
+        "B+树 vs B树：B+树非叶子节点不存储数据，可存储更多键值；B+树叶子节点有序链表支持范围查询",
+        "查询优化：使用覆盖索引避免回表、避免使用SELECT *、合理使用联合索引（最左前缀原则）、避免在索引列上使用函数或计算"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请解释Spring Boot的自动配置原理，并说明如何自定义一个Starter。",
+      "purpose": "考察对Spring Boot框架的理解，这是JD中优先考虑的技能。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "自动配置原理：@EnableAutoConfiguration通过spring.factories文件加载AutoConfiguration类，结合@Conditional条件注解实现按需配置",
+        "关键注解：@SpringBootApplication包含@EnableAutoConfiguration、@ComponentScan、@Configuration",
+        "条件注解：@ConditionalOnClass、@ConditionalOnMissingBean等，根据类路径或Bean存在性决定是否加载配置",
+        "自定义Starter步骤：创建自动配置类、在spring.factories中注册、定义属性类（@ConfigurationProperties）、提供条件判断"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "技术基础",
+      "question": "请解释Redis的基本数据类型及其使用场景，并说明Redis的过期策略和内存淘汰机制。",
+      "purpose": "考察Redis基础知识，JD中优先考虑Redis经验。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "基本数据类型：String（缓存、计数器）、Hash（对象存储）、List（消息队列）、Set（去重、交集）、Sorted Set（排行榜）",
+        "过期策略：定时删除（定期随机检查）、惰性删除（访问时检查）、定期删除（默认每100ms随机检查）",
+        "内存淘汰机制：noeviction（不淘汰）、allkeys-lru（LRU淘汰）、volatile-lru（设置过期时间的LRU）、allkeys-random（随机淘汰）等",
+        "实际应用：缓存热点数据、分布式锁（SETNX）、计数器（INCR）"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "项目深挖",
+      "question": "根据您的简历，您提到参与过某某项目开发。请详细描述您在项目中承担的角色，以及遇到了哪些技术挑战？如何解决的？",
+      "purpose": "考察项目经验真实性、问题解决能力和技术深度，简历空白时转为考察候选人对项目经历的规划能力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "如果候选人无项目经验，可询问是否参加过课程设计或实习项目，并描述角色和贡献",
+        "描述具体的技术挑战（如性能问题、Bug排查）",
+        "说明解决过程：分析原因、查阅资料、尝试方案、最终解决",
+        "强调团队协作和沟通的重要性"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "项目深挖",
+      "question": "如果您参与iBOSS项目，您会如何设计一个用户登录功能？请画出简化的架构图并说明关键点。",
+      "purpose": "考察系统设计能力和对业务场景的理解，结合JD中的iBOSS项目。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "架构：前端发送登录请求 -> 后端Controller -> Service层校验 -> 数据库/Redis验证 -> 返回Token",
+        "关键点：密码加密（BCrypt）、JWT生成与验证、Redis存储Session、防止暴力破解（验证码、限流）",
+        "安全性：HTTPS传输、防SQL注入、防XSS攻击",
+        "扩展性：支持单点登录、多端登录冲突处理"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "场景设计",
+      "question": "假设您负责设计一个亿级流量的电商系统缓存策略，用户访问商品详情页，请说明如何设计缓存架构以应对高并发？",
+      "purpose": "考察系统设计能力和高并发场景下的思考，大厂常考。",
+      "difficulty": "hard",
+      "expected_answer_points": [
+        "缓存分层：本地缓存（Caffeine）+ 分布式缓存（Redis）+ 数据库",
+        "缓存策略：热点数据预热、缓存过期时间随机化、缓存穿透/击穿/雪崩的解决方案",
+        "缓存穿透：布隆过滤器拦截不存在请求",
+        "缓存击穿：互斥锁（Redis SETNX）或逻辑过期时间",
+        "缓存雪崩：缓存高可用（Redis集群）、限流降级、多级缓存",
+        "数据一致性：先更新数据库，再删除缓存（延迟双删）"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "场景设计",
+      "question": "如果线上发现接口响应时间突然变慢，作为开发人员您会如何排查？请描述排查思路和工具。",
+      "purpose": "考察问题排查能力和对Linux、JVM调优的了解。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "初步排查：查看日志（错误日志、慢查询日志）、监控指标（CPU、内存、IO）",
+        "工具：使用top、htop查看系统负载，jstack查看线程堆栈，jstat查看GC情况，Arthas诊断",
+        "数据库排查：慢SQL分析（EXPLAIN）、索引优化、连接池状态",
+        "网络排查：ping、traceroute、netstat查看连接数",
+        "解决步骤：定位瓶颈（CPU高？IO等待？）、针对性优化（代码、SQL、配置）"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "请描述一个您在学习或项目中遇到的困难场景，您是如何通过自我学习解决的？",
+      "purpose": "考察学习能力和问题解决能力，JD强调学习能力强。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "描述具体困难（如不理解某个技术点、Bug难以排查）",
+        "学习方法：查阅官方文档、阅读源码、看视频教程、请教他人",
+        "解决过程：分步骤尝试、记录日志、总结规律",
+        "结果：成功解决问题并形成知识沉淀"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "软技能",
+      "question": "在团队开发中，如果您的代码被同事指出了潜在问题，您会如何处理？请举例说明。",
+      "purpose": "考察沟通能力和团队协作态度，JD要求性格开朗、善于沟通。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "态度：虚心接受，感谢指出问题",
+        "分析：理解问题原因（性能、安全、可读性等）",
+        "沟通：与同事讨论解决方案，寻求最佳实践",
+        "改进：修改代码并测试，总结经验避免重犯"
+      ]
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的执行过程，并说明当发生哈希冲突时是如何解决的。",
+      "category": "技术基础",
+      "answer": "【原始回答】put 就是 拿到 get就是给\n【追问回答】具体做了 根据hash值去计算",
+      "score": 0,
+      "feedback": "回答极其简略，仅提及'put就是拿到，get就是给'和'根据hash值去计算'，完全未涉及HashMap的核心原理（如数组+链表/红黑树结构、哈希冲突解决、扩容机制等），技术基础薄弱，表达不清晰，缺乏逻辑性。",
+      "dimensions": {
+        "技术基础": 1,
+        "项目经验": 0,
+        "场景设计": 0,
+        "软技能": 1
+      },
+      "confidence": 9,
+      "follow_up_question": "请详细解释HashMap的put方法内部具体做了哪些步骤？比如如何计算key的哈希值、如何确定数组索引、当发生哈希冲突时具体怎么处理？另外，能说一下什么是负载因子以及扩容的过程吗？",
+      "original_score": 0
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [
+      0
+    ],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

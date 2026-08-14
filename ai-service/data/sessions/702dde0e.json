@@ -1,0 +1,46 @@
+{
+  "messages": [],
+  "user_id": 3,
+  "session_id": "702dde0e",
+  "jd_content": "Java developer",
+  "resume_content": "5 years Java",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "question": "Q1",
+      "category": "Java"
+    },
+    {
+      "question": "Q2",
+      "category": "Spring"
+    },
+    {
+      "question": "Q3",
+      "category": "DB"
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "Q1",
+      "category": "Java",
+      "answer": "A1",
+      "score": 7,
+      "feedback": "ok"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 1,
+  "phase": "questions_ready"
+}

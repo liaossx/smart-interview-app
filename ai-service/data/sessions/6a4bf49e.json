@@ -1,0 +1,40 @@
+{
+  "messages": [],
+  "user_id": 1,
+  "session_id": "6a4bf49e",
+  "jd_content": "test jd",
+  "resume_content": "test resume",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "question": "q1",
+      "category": "java",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "q1",
+      "category": "java",
+      "answer": "a1",
+      "score": 7,
+      "feedback": "good"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 1,
+  "phase": "questions_ready"
+}

@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS flyway_test (id INT PRIMARY KEY);

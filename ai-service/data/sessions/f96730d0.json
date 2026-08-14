@@ -1,0 +1,40 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "f96730d0",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的执行过程，并说明当发生哈希冲突时是如何解决的。",
+      "category": "技术基础",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "请解释Java中HashMap的工作原理，包括put和get方法的执行过程，并说明当发生哈希冲突时是如何解决的。",
+      "category": "技术基础",
+      "answer": "【原始回答】put 就是 拿到 get就是给\n【追问回答】具体做了 根据hash值去计算",
+      "score": 0,
+      "feedback": "回答极其简略，仅提及'put就是拿到，get就是给'和'根据hash值去计算'，完全未涉及HashMap的核心原理（如数组+链表/红黑树结构、哈希冲突解决、扩容机制等），技术基础薄弱，表达不清晰，缺乏逻辑性。"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 1,
+  "phase": "questions_ready"
+}

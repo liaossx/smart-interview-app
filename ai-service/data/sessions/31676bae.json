@@ -1,0 +1,157 @@
+{
+  "messages": [],
+  "user_id": 1,
+  "session_id": "31676bae",
+  "jd_content": "【岗位职责】\n1. 参与企业AI应用系统的核心功能模块开发，在导师指导下学习系统架构设计方法，涵盖知识库管理、检索优化、推理逻辑、权限划分等模块；\n2. 参与LLM在RAG（检索增强生成）、Agent智能体、Function Calling等方向的应用开发与调优，亲手构建可落地的AI解决方案；\n3. 协助构建并优化行业专业知识库，参与数据处理、向量索引构建、检索效果评测等关键环节，提升全链路LLM-RAG技术效能。\n【任职要求】\n1. 高中及以上在读，计算机、人工智能、电子信息等相关专业均可；\n2. 对RAG、大模型应用、知识图谱等方向有实际项目经历（含课程设计、竞赛、开源贡献），熟悉LangChain/LlamaIndex等框架者优先；\n3. 熟悉SQL数据库（PostgreSQL/MySQL），了解GIS或空间数据处理者加分；\n4. 具备良好的代码能力（Python），有GitHub项目或技术博客者优先；\n5. 每周可实习5天，连续实习3个月以上，条件优秀者可放宽实习时间。\n【我们将提供】\n1、参与真实企业级AI项目，直面政府/产业客户场景（非玩具项目）;\n2、技术栈：LangChain + LlamaIndex + PGVector + 飞书生态 + 多Agent架构等等;\n3、表现优异者可获转正offer.",
+  "resume_content": "",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请用Python实现一个函数，输入一个字符串，返回该字符串中每个字符出现的次数，并按出现次数降序排序输出。",
+      "purpose": "考察基础编程能力、Python语法熟练度和问题解决能力",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "使用字典或collections.Counter统计字符次数",
+        "使用sorted函数按值降序排序",
+        "输出格式正确，考虑边界情况（如空字符串）"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "什么是RAG（检索增强生成）？请简要描述它的工作原理和主要组成部分。",
+      "purpose": "考察对大模型应用技术的了解程度，是否具备基本认知",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "RAG结合检索和生成，解决LLM知识有限和幻觉问题",
+        "主要组成部分：文档索引构建、检索模块、生成模块",
+        "工作原理：将用户查询检索相关文档片段，作为上下文输入LLM生成回答"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "在关系型数据库（如PostgreSQL）中，什么是索引？请列举至少两种索引类型，并说明它们的适用场景。",
+      "purpose": "考察数据库基础知识，为后续学习PGVector和空间索引打基础",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "索引是加速数据检索的数据结构",
+        "B树索引：适用于等值查询和范围查询",
+        "哈希索引：适用于等值查询",
+        "GIN索引：适用于全文搜索、数组等",
+        "GiST索引：适用于空间数据（如GIS）"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "项目深挖",
+      "question": "你的简历中没有项目经验，请描述一次你自学新技术的经历。你是如何找到学习资源、解决遇到问题并最终掌握它的？",
+      "purpose": "考察自学能力和主动性，评估是否能快速适应岗位要求",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "有明确的自学目标（如学习Python、某个框架）",
+        "使用多种资源：文档、在线课程、社区论坛等",
+        "遇到问题后能主动搜索、试错、请教他人",
+        "有具体的成果或应用案例"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "项目深挖",
+      "question": "假设你从未接触过LangChain，现在需要在一周内用它搭建一个简单的问答系统。请说出你的学习计划和实现步骤。",
+      "purpose": "考察快速学习能力和问题拆解能力，模拟创业公司实际工作场景",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "第一天：阅读官方文档和教程，理解核心概念（链、代理、检索）",
+        "第二-三天：跟随示例搭建基础原型，如加载文档、创建索引、回答问题",
+        "第四-五天：调试和优化，处理常见问题（如API调用错误、检索效果不佳）",
+        "第六-七天：测试和总结，记录遇到的关键问题和解决方案"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "场景设计",
+      "question": "假设我们要构建一个企业知识库问答系统，用户上传PDF文档后可以提问。请设计一个简单的技术方案，包括数据存储、检索和生成回答的流程。",
+      "purpose": "考察系统设计能力和对RAG流程的理解，结合岗位实际业务",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "文档处理：解析PDF为纯文本，分块处理",
+        "向量化：使用嵌入模型（如OpenAI、HuggingFace）生成向量",
+        "存储：使用PGVector或类似向量数据库存储向量和元数据",
+        "检索：用户查询向量化，通过相似度检索相关文档块",
+        "生成：将检索结果作为上下文输入LLM生成回答",
+        "考虑扩展：支持多文档、权限管理等"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "场景设计",
+      "question": "如果让你处理一批包含地理坐标（经度、纬度）的数据，需要支持按范围查询（如查询某个区域内的所有点），你会如何在数据库中实现？请简单说明。",
+      "purpose": "考察GIS和空间数据处理的基本概念，评估是否具备岗位所需的基础知识",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "使用PostGIS扩展，创建geometry类型字段存储空间数据",
+        "建立GiST空间索引以加速查询",
+        "使用ST_Within、ST_Distance等函数进行空间查询",
+        "替代方案：MySQL的SPATIAL索引或GeoHash编码"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "软技能",
+      "question": "作为一个实习生，如果你在开发中遇到一个无法解决的技术问题，你会怎么处理？请描述你的思路和步骤。",
+      "purpose": "考察沟通能力、主动性和问题解决策略，评估是否适合创业公司团队",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "先自己尝试：搜索官方文档、Stack Overflow、GitHub Issue",
+        "记录问题现象和尝试过的方案",
+        "向同事或导师请教，清晰描述问题上下文",
+        "如果时间紧迫，提出临时替代方案或寻求帮助",
+        "事后总结经验，避免类似问题"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "场景设计",
+      "question": "面试中我们讨论了很多技术概念，请用你自己的话总结一下，你对我们这个岗位的工作内容有什么理解？你觉得自己最需要提升哪些方面？",
+      "purpose": "考察对岗位的认知、自我评估能力和沟通表达能力",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "理解岗位核心：构建企业AI应用，涉及RAG、Agent等技术",
+        "承认自己目前缺乏项目经验，但强调学习意愿",
+        "提到具体需要提升的方向：如LangChain使用、数据库优化、空间数据处理",
+        "表达对参与真实项目的期待和积极性"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "技术基础",
+      "question": "请解释什么是向量嵌入（Vector Embedding），它在RAG系统中扮演什么角色？",
+      "purpose": "考察对RAG核心概念的理解，评估基础知识深度",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "向量嵌入是将文本、图像等数据映射为固定长度的数值向量，语义相近的向量在空间中距离更近",
+        "在RAG中，文档和查询都被转换为向量，通过向量相似度检索相关文档",
+        "常见的嵌入模型如text-embedding-ada-002",
+        "向量数据库（如PGVector）专门用于存储和检索向量"
+      ]
+    }
+  ],
+  "current_question_index": 0,
+  "answers": [],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}

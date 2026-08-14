@@ -1,0 +1,40 @@
+{
+  "messages": [],
+  "user_id": 1,
+  "session_id": "2817837e",
+  "jd_content": "We are looking for a Java developer with Spring Boot experience",
+  "resume_content": "5 years Java experience, Spring Boot, MySQL",
+  "jd_analysis": {},
+  "resume_analysis": {},
+  "gap_analysis": {},
+  "questions": [
+    {
+      "question": "What is Spring Boot?",
+      "category": "Java",
+      "difficulty": "medium",
+      "expected_answer_points": []
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "What is Spring Boot?",
+      "category": "Java",
+      "answer": "A framework",
+      "score": 7,
+      "feedback": "Good"
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 1,
+  "phase": "questions_ready"
+}

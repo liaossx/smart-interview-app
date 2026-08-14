@@ -1,0 +1,262 @@
+{
+  "messages": [],
+  "user_id": 2,
+  "session_id": "2e4cba92",
+  "jd_content": "【工作职责】\n1. 参与中国移动国际公司iBOSS项目java开发工作，包括代码开发、功能迭代、接口联调、代码注释及相关技术文档编写等。\n2. 配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改。\n【职位要求】\n1. 应届毕业生，本科及以上学历，通信、计算机、电子信息、软件工程等相关专业；\n2. 熟悉软件工程开发流程、基础代码开发规范；\n3. 具备基础SQL语句编写能力，了解Linux常用命令及简单Shell脚本，熟练掌握Java开发语言，熟悉SpringBoot框架者优先；\n4. 接触过后端开发常用技术及工具，了解Postman、Git、Maven、IDEA，熟悉MySQL、Redis者优先;\n5.性格开朗，学习及语言表达能力强，善于与人沟通、交流 。",
+  "resume_content": "",
+  "jd_analysis": {
+    "tech_stack": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA"
+    ],
+    "responsibilities": [
+      "参与iBOSS项目Java开发，包括代码开发、功能迭代、接口联调、代码注释及技术文档编写",
+      "配合测试人员进行缺陷修复、问题排查，跟进BUG优化整改"
+    ],
+    "required_skills": [
+      "熟悉软件工程开发流程和基础代码开发规范",
+      "具备基础SQL语句编写能力",
+      "了解Linux常用命令及简单Shell脚本",
+      "熟练掌握Java开发语言",
+      "熟悉SpringBoot框架者优先",
+      "接触过后端开发常用技术及工具",
+      "了解Postman、Git、Maven、IDEA",
+      "熟悉MySQL、Redis者优先",
+      "性格开朗，学习及语言表达能力强，善于沟通交流"
+    ],
+    "experience_level": "校招",
+    "key_requirements": [
+      "应届毕业生",
+      "本科及以上学历",
+      "通信、计算机、电子信息、软件工程等相关专业"
+    ],
+    "role_type": "后端开发",
+    "company_scale": "大厂",
+    "company_scale_reason": "公司名称为中国移动国际公司，属于大型国有企业，规模庞大，万人级别",
+    "summary": "该岗位为中国移动国际公司面向应届毕业生的Java后端开发岗位，参与iBOSS项目开发，要求掌握Java、SpringBoot、MySQL等后端技术，具备良好沟通能力。"
+  },
+  "resume_analysis": {
+    "skills": [],
+    "projects": []
+  },
+  "gap_analysis": {
+    "matching_skills": [],
+    "jd_only_skills": [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Redis",
+      "Linux",
+      "Shell",
+      "Postman",
+      "Git",
+      "Maven",
+      "IDEA",
+      "SQL",
+      "软件工程开发流程",
+      "代码开发规范",
+      "沟通能力"
+    ],
+    "resume_only_skills": [],
+    "interview_focus": [
+      {
+        "area": "Java基础",
+        "reason": "JD明确要求熟练掌握Java，且简历无任何技能或项目，需考察候选人是否具备基本编程能力",
+        "depth": "深入"
+      },
+      {
+        "area": "SpringBoot框架",
+        "reason": "JD优先考虑熟悉SpringBoot者，是项目核心框架，需了解候选人掌握程度",
+        "depth": "深入"
+      },
+      {
+        "area": "数据库知识（MySQL/Redis）",
+        "reason": "JD要求基础SQL编写能力，并优先熟悉MySQL和Redis，是后端开发必备技能",
+        "depth": "一般"
+      },
+      {
+        "area": "Linux及Shell",
+        "reason": "JD要求了解Linux常用命令及Shell脚本，是日常开发运维基础",
+        "depth": "一般"
+      },
+      {
+        "area": "开发工具与协作",
+        "reason": "JD要求了解Postman、Git、Maven、IDEA，考察候选人工具使用经验",
+        "depth": "了解"
+      },
+      {
+        "area": "沟通与学习能力",
+        "reason": "JD强调性格开朗、沟通表达能力强，校招岗位看重潜力",
+        "depth": "一般"
+      }
+    ],
+    "question_strategy": "由于简历完全空白，面试需从零开始评估候选人的基础知识和潜力。重点考察Java核心概念（如面向对象、集合、多线程）、SpringBoot基础（如自动配置、依赖注入）、SQL基础（如CRUD、联表查询）以及Linux常用命令。同时通过情景题评估沟通能力和学习意愿。整体以基础概念和简单应用为主，避免复杂项目经验题。",
+    "difficulty": "easy"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "技术基础",
+      "question": "请解释Java中面向对象编程的三大特性，并分别举例说明在实际开发中的应用场景。",
+      "purpose": "考察Java基础核心概念，判断候选人是否掌握封装、继承、多态的基本理解。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "封装：通过private隐藏内部属性，提供getter/setter访问，如实体类中的字段。",
+        "继承：子类通过extends复用父类代码，如定义基类BaseEntity包含公共字段。",
+        "多态：父类引用指向子类对象，方法重写实现不同行为，如List接口的实现类ArrayList和LinkedList。"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "技术基础",
+      "question": "请简述Spring Boot的核心注解有哪些？并说明@SpringBootApplication注解的组成及作用。",
+      "purpose": "考察候选人是否接触过SpringBoot框架，了解其自动配置原理。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "核心注解：@RestController、@Service、@Repository、@Autowired、@GetMapping、@PostMapping等。",
+        "@SpringBootApplication由@SpringBootConfiguration、@EnableAutoConfiguration、@ComponentScan三个注解组合而成。",
+        "@EnableAutoConfiguration负责自动配置，根据classpath中的jar包自动加载配置类。"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "技术基础",
+      "question": "请编写一个SQL语句，查询学生表中年龄大于20岁的所有学生姓名和年龄，并按年龄降序排序。假设表名为student，包含字段name和age。",
+      "purpose": "考察基础SQL编写能力，判断候选人是否具备数据库操作基础。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "SQL语句：SELECT name, age FROM student WHERE age > 20 ORDER BY age DESC;",
+        "解释：WHERE用于过滤，ORDER BY用于排序，DESC指定降序。"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "技术基础",
+      "question": "请解释Redis中String和Hash两种数据类型的区别，并举例说明各自适合的场景。",
+      "purpose": "考察对Redis常用数据结构的理解，判断候选人是否熟悉Redis基本使用。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "String：存储单一值，如缓存页面、计数器；操作简单，支持set/get。",
+        "Hash：存储多个键值对，如用户对象（id、name、age）；适合存储结构化数据，节省内存。",
+        "区别：String适合简单值，Hash适合对象属性。"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "技术基础",
+      "question": "请列举三个常用的Linux命令，并说明其用途。例如：如何查看当前目录下的文件列表？如何查找包含特定字符串的日志文件？",
+      "purpose": "考察Linux基本命令掌握情况，判断候选人是否具备日常运维基础。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "ls：列出当前目录文件。",
+        "grep：在文件中搜索特定字符串，如grep 'error' log.txt。",
+        "cd：切换目录。",
+        "其他可选：ps（查看进程）、tail（查看文件末尾）等。"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "项目深挖",
+      "question": "由于您的简历中没有项目经验，请设想一个场景：您需要参与一个iBOSS项目的模块开发，如何开始一个新功能的技术实现？请描述从接到需求到提交代码的步骤。",
+      "purpose": "考察候选人对软件工程开发流程的理解，以及是否具备基本的项目协作意识。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "理解需求：与产品经理沟通，明确功能目标和输入输出。",
+        "设计：编写接口文档，设计数据库表结构，确定Controller/Service/DAO分层。",
+        "编码：使用IDEA创建SpringBoot项目，编写代码并添加注释。",
+        "测试：使用Postman调用接口，验证功能正确性。",
+        "提交：通过Git提交代码，并编写技术文档。"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "场景设计",
+      "question": "假设iBOSS项目中有个用户登录接口，经常出现连接超时问题，作为开发人员，你会如何排查和修复？请从可能的原因和排查步骤两方面回答。",
+      "purpose": "考察问题排查能力和逻辑思维，判断候选人是否具备解决实际问题的能力。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "可能原因：数据库连接池耗尽、Redis缓存失效、网络延迟、代码中存在死锁或慢查询。",
+        "排查步骤：查看服务器日志（Linux tail命令）、检查数据库连接池状态、分析慢SQL（EXPLAIN）、使用Postman模拟请求测试。",
+        "修复：优化SQL、增加连接池大小、添加缓存、检查代码锁机制。"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "场景设计",
+      "question": "如果让你从零搭建一个SpringBoot项目用于iBOSS模块，你会如何进行技术选型？请列出核心依赖并说明理由。",
+      "purpose": "考察候选人对SpringBoot生态的了解及技术选型能力。",
+      "difficulty": "medium",
+      "expected_answer_points": [
+        "核心依赖：spring-boot-starter-web（构建REST API）、spring-boot-starter-data-jpa（数据库操作）、spring-boot-starter-data-redis（缓存）、mysql-connector-java（数据库驱动）。",
+        "理由：Web服务需要Spring MVC，JPA简化CRUD，Redis提升性能。",
+        "工具：Maven管理依赖，Git版本控制，IDEA开发。"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "软技能",
+      "question": "请描述一次你学习新技术或工具的经历，你是如何快速上手的？如果遇到困难，你会怎么解决？",
+      "purpose": "考察学习能力和问题解决能力，判断候选人是否具备主动学习和沟通潜力。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "描述具体经历：如学习SpringBoot，先看官方文档或教程，然后在小项目实践。",
+        "遇到困难：遇到编译错误或依赖冲突，会先搜索错误信息（如Stack Overflow），或请教有经验的同事。",
+        "总结：通过动手实践和寻求帮助，最终掌握技术。"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "软技能",
+      "question": "在团队开发中，如果产品经理提出的需求不明确，你会怎么处理？请结合iBOSS项目场景说明。",
+      "purpose": "考察沟通能力和协作意识，判断候选人是否适合团队工作。",
+      "difficulty": "easy",
+      "expected_answer_points": [
+        "主动沟通：与产品经理确认需求细节，如输入输出、边界条件。",
+        "文档化：将确认后的需求记录在文档中，避免理解偏差。",
+        "反馈：如果发现需求不合理，及时提出建议方案。",
+        "举例：如登录接口是否需要验证码，需明确后开发。"
+      ]
+    }
+  ],
+  "current_question_index": 1,
+  "answers": [
+    {
+      "question_id": 1,
+      "question": "请解释Java中面向对象编程的三大特性，并分别举例说明在实际开发中的应用场景。",
+      "category": "技术基础",
+      "answer": "【原始回答】面向对象的三大特性分别是 封装 继承 多态\n【追问回答】比如说 子类继承 父类  就是继承",
+      "score": 1,
+      "feedback": "回答仅提及三大特性名称，未对封装、继承、多态进行任何解释或举例，缺乏深度。追问后也只给出一个非常浅显的继承示例，未涉及实际应用场景。整体表现远低于历史同类回答的平均水平。",
+      "dimensions": {
+        "技术基础": 2,
+        "项目经验": 0,
+        "场景设计": 0,
+        "软技能": 2
+      },
+      "confidence": 9,
+      "follow_up_question": "请分别详细解释封装、继承、多态的含义，并各举一个你在实际项目中使用的具体例子，说明如何应用这些特性解决了什么问题。",
+      "original_score": 2
+    }
+  ],
+  "evaluation": {},
+  "stats_context": "",
+  "pending_follow_up": {},
+  "difficulty_stats": {
+    "easy": [
+      1
+    ],
+    "medium": [],
+    "hard": []
+  },
+  "supplemental_questions": [],
+  "iteration_count": 0,
+  "phase": "questions_ready"
+}
