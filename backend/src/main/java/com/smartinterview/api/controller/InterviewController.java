@@ -353,6 +353,33 @@ public class InterviewController {
     }
 
     /**
+     * TTS 语音合成接口代理 —— 转发至 Python AI 服务的 /voice/tts 接口
+     */
+    @PostMapping("/voice/tts")
+    public ResponseEntity<?> voiceTts(@RequestBody Map<String, Object> reqBody) {
+        try {
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+            HttpEntity<Map<String, Object>> entity = new HttpEntity<>(reqBody, headers);
+            ResponseEntity<byte[]> resp = restTemplate.exchange(
+                    aiBaseUrl + "/voice/tts",
+                    HttpMethod.POST,
+                    entity,
+                    byte[].class
+            );
+            HttpHeaders respHeaders = new HttpHeaders();
+            if (resp.getHeaders().getContentType() != null) {
+                respHeaders.setContentType(resp.getHeaders().getContentType());
+            } else {
+                respHeaders.setContentType(MediaType.valueOf("audio/mpeg"));
+            }
+            return new ResponseEntity<>(resp.getBody(), respHeaders, resp.getStatusCode());
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("{\"code\":500,\"message\":\"语音合成服务暂不可用\"}");
+        }
+    }
+
+    /**
      * 通用代理方法：将请求转发至 Python AI 服务，并原样返回响应。
      * <p>
      * 逻辑：

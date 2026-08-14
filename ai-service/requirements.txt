@@ -12,6 +12,7 @@ python-docx==1.2.0
 python-multipart==0.0.32
 openai==2.36.0
 tiktoken==0.13.0
-# ---- RAG 语义数据库 ----
+# ---- RAG 语义数据库 & 语音引擎 ----
 faiss-cpu
 sentence-transformers==3.4.1
+edge-tts

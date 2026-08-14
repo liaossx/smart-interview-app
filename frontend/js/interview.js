@@ -64,7 +64,6 @@ async function resumeInterview(backendSessionId) {
                     if (cqRes.question) {
                         addMessage('agent', `---\n\n**第 ${currentInterview.currentIdx + 1}/${currentInterview.questions.length} 题**\n\n${cqRes.question}`);
                         document.getElementById('answerInput').disabled = false;
-                        document.getElementById('answerInput').focus();
                         return;
                     }
                 }
@@ -128,7 +127,6 @@ async function resumeInterview(backendSessionId) {
             );
             document.getElementById('answerInput').placeholder = '输入你的回答...';
             document.getElementById('answerInput').disabled = false;
-            document.getElementById('answerInput').focus();
         }
     } catch (e) {
         addMessage('agent', '❌ 恢复失败: ' + e.message);
@@ -138,7 +136,13 @@ async function resumeInterview(backendSessionId) {
 // === 面试核心流程 ===
 
 async function startInterview() {
-    if (!token || !currentUser) { showLogin(); return; }
+    token = localStorage.getItem('token');
+    currentUser = JSON.parse(localStorage.getItem('user') || 'null');
+    if (!token || !currentUser) {
+        alert('请先登录账号后再开始面试！');
+        showLogin();
+        return;
+    }
 
     const jdContent = document.getElementById('jdContent').value.trim();
     if (!jdContent) { alert('请粘贴 JD 内容'); return; }
@@ -146,7 +150,15 @@ async function startInterview() {
     try {
         // 1. 保存 JD 到后端
         const jdRes = await api.createJd(jdContent);
-        if (jdRes.code !== 200) { alert(jdRes.message); return; }
+        if (!jdRes || jdRes.code !== 200) {
+            if (jdRes && (jdRes.code === 401 || jdRes.code === 403 || (typeof jdRes.message === 'string' && jdRes.message.toLowerCase().includes('token')))) {
+                alert('登录状态已过期，请重新登录！');
+                showLogin();
+            } else {
+                alert((jdRes && jdRes.message) || '保存岗位描述失败，请检查网络或重新登录');
+            }
+            return;
+        }
         currentInterview.jdId = jdRes.data.id;
 
         // 2. 上传简历（可选）
@@ -154,13 +166,13 @@ async function startInterview() {
         if (selectedResumeFile) {
             // 先上传到后端存储
             const resumeRes = await api.uploadResume(selectedResumeFile);
-            if (resumeRes.code === 200) {
+            if (resumeRes && resumeRes.code === 200) {
                 currentInterview.resumeId = resumeRes.data.id;
             }
             // 再请求 AI 服务解析简历内容
             try {
                 const parseRes = await api.parseResume(selectedResumeFile);
-                if (parseRes.content) {
+                if (parseRes && parseRes.content) {
                     resumeContent = parseRes.content;
                 }
             } catch(e) {
@@ -170,7 +182,15 @@ async function startInterview() {
 
         // 3. 创建 session (后端)
         const sessionRes = await api.createSession(currentInterview.jdId, currentInterview.resumeId);
-        if (sessionRes.code !== 200) { alert(sessionRes.message); return; }
+        if (!sessionRes || sessionRes.code !== 200) {
+            if (sessionRes && (sessionRes.code === 401 || sessionRes.code === 403 || (typeof sessionRes.message === 'string' && sessionRes.message.toLowerCase().includes('token')))) {
+                alert('登录状态已过期，请重新登录！');
+                showLogin();
+            } else {
+                alert((sessionRes && sessionRes.message) || '创建面试会话失败，请重试');
+            }
+            return;
+        }
         currentInterview.backendSessionId = sessionRes.data.id;
         currentInterview.sessionId = null; // AI session ID will be set later
 
@@ -310,7 +330,7 @@ function showQuestion(idx) {
     currentInterview.currentIdx = idx;
     document.getElementById('answerInput').placeholder = '输入你的回答，或点击麦克风语音作答...';
     document.getElementById('answerInput').disabled = false;
-    document.getElementById('answerInput').focus();
+    // 移除自动聚焦 .focus()，防止每次出题后手机软键盘自动弹起遮挡题目内容
     document.getElementById('progressText').textContent = `${idx+1}/${questions.length}`;
     document.getElementById('progressFill').style.width = `${((idx+1)/questions.length)*100}%`;
 }

@@ -10,9 +10,40 @@ const api = {
     },
 
     headers() {
+        token = localStorage.getItem('token');
         const h = { 'Content-Type': 'application/json' };
         if (token) h['Authorization'] = `Bearer ${token}`;
         return h;
+    },
+
+    async _handleResponse(res) {
+        if (res.status === 401 || res.status === 403) {
+            this.handleAuthExpired();
+            return { code: 401, message: '登录状态已过期，请重新登录' };
+        }
+        try {
+            const data = await res.json();
+            if (data && (data.code === 401 || data.code === 403 || (typeof data.message === 'string' && (data.message.toLowerCase().includes('token') || data.message.includes('未登录') || data.message.includes('401'))))) {
+                this.handleAuthExpired();
+            }
+            return data;
+        } catch(e) {
+            return { code: res.status, message: res.statusText };
+        }
+    },
+
+    handleAuthExpired() {
+        token = null;
+        currentUser = null;
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        const userInfoEl = document.getElementById('userInfo');
+        if (userInfoEl) {
+            userInfoEl.innerHTML = `
+                <div>未登录</div>
+                <button class="btn-secondary" style="margin-top:8px;width:100%;" onclick="showLogin()">登录</button>
+            `;
+        }
     },
 
     // Auth (no token needed)
@@ -40,16 +71,17 @@ const api = {
             method: 'POST', headers: this.headers(),
             body: JSON.stringify({ content })
         });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     async listJds() {
         const res = await fetch(`${API_BASE}/jds`, { headers: this.headers() });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     // Resume
     async uploadResume(file) {
+        token = localStorage.getItem('token');
         const formData = new FormData();
         formData.append('file', file);
         const res = await fetch(`${API_BASE}/resumes/upload`, {
@@ -57,10 +89,11 @@ const api = {
             headers: { 'Authorization': `Bearer ${token}` },
             body: formData
         });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     async parseResume(file) {
+        token = localStorage.getItem('token');
         const formData = new FormData();
         formData.append('file', file);
         const res = await fetch(`${API_BASE}/resume/parse`, {
@@ -68,7 +101,7 @@ const api = {
             headers: { 'Authorization': `Bearer ${token}` },
             body: formData
         });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     // Sessions
@@ -77,24 +110,24 @@ const api = {
             method: 'POST', headers: this.headers(),
             body: JSON.stringify({ jdId: jdId, resumeId: resumeId })
         });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     async listSessions() {
         const res = await fetch(`${API_BASE}/sessions`, { headers: this.headers() });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     async getSession(id) {
         const res = await fetch(`${API_BASE}/sessions/${id}`, { headers: this.headers() });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     async deleteSession(id) {
         const res = await fetch(`${API_BASE}/sessions/${id}`, {
             method: 'DELETE', headers: this.headers()
         });
-        return res.json();
+        return this._handleResponse(res);
     },
 
     async saveSessionQuestions(sessionId, questions) {
