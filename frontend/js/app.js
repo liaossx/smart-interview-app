@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         } catch(e) {}
 
-        // 没有进行中的面试 → 按角色进入默认页
-        if (currentUser.role === 'ADMIN') {
+        // 没有进行中的面试 → 按角色进入默认页 (带空值保护)
+        if (currentUser && currentUser.role === 'ADMIN') {
             showPage('admin-dashboard');
         } else {
             showPage('dashboard');

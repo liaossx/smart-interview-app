@@ -64,7 +64,6 @@ async function resumeInterview(backendSessionId) {
                     if (cqRes.question) {
                         addMessage('agent', `---\n\n**第 ${currentInterview.currentIdx + 1}/${currentInterview.questions.length} 题**\n\n${cqRes.question}`);
                         document.getElementById('answerInput').disabled = false;
-                        document.getElementById('answerInput').focus();
                         return;
                     }
                 }
@@ -128,7 +127,6 @@ async function resumeInterview(backendSessionId) {
             );
             document.getElementById('answerInput').placeholder = '输入你的回答...';
             document.getElementById('answerInput').disabled = false;
-            document.getElementById('answerInput').focus();
         }
     } catch (e) {
         addMessage('agent', '❌ 恢复失败: ' + e.message);
@@ -138,76 +136,125 @@ async function resumeInterview(backendSessionId) {
 // === 面试核心流程 ===
 
 async function startInterview() {
-    if (!token || !currentUser) { showLogin(); return; }
+    console.log('[InterviewStart] 🚀 用户点击“开始面试模拟”，启动全流程...');
+    token = localStorage.getItem('token');
+    currentUser = JSON.parse(localStorage.getItem('user') || 'null');
+    if (!token || !currentUser) {
+        console.warn('[InterviewStart] ❌ 用户未登录或 Token 已丢失');
+        alert('请先登录账号后再开始面试！');
+        showLogin();
+        return;
+    }
 
     const jdContent = document.getElementById('jdContent').value.trim();
-    if (!jdContent) { alert('请粘贴 JD 内容'); return; }
+    if (!jdContent) {
+        alert('请粘贴 JD 内容');
+        return;
+    }
 
     try {
-        // 1. 保存 JD 到后端
+        console.log('[InterviewStart] 1. 正在保存岗位描述 JD 到后端...');
         const jdRes = await api.createJd(jdContent);
-        if (jdRes.code !== 200) { alert(jdRes.message); return; }
+        if (!jdRes || jdRes.code !== 200) {
+            console.error('[InterviewStart] ❌ 保存 JD 失败:', jdRes);
+            if (jdRes && (jdRes.code === 401 || jdRes.code === 403 || (typeof jdRes.message === 'string' && jdRes.message.toLowerCase().includes('token')))) {
+                alert('登录状态已过期，请重新登录！');
+                showLogin();
+            } else {
+                alert((jdRes && jdRes.message) || '保存岗位描述失败，请检查网络或重新登录');
+            }
+            return;
+        }
         currentInterview.jdId = jdRes.data.id;
+        console.log('[InterviewStart] ✅ JD 保存成功, ID:', currentInterview.jdId);
 
         // 2. 上传简历（可选）
         let resumeContent = '';
         if (selectedResumeFile) {
-            // 先上传到后端存储
+            console.log('[InterviewStart] 2. 正在上传并解析简历附件...');
             const resumeRes = await api.uploadResume(selectedResumeFile);
-            if (resumeRes.code === 200) {
+            if (resumeRes && resumeRes.code === 200) {
                 currentInterview.resumeId = resumeRes.data.id;
             }
-            // 再请求 AI 服务解析简历内容
             try {
                 const parseRes = await api.parseResume(selectedResumeFile);
-                if (parseRes.content) {
+                if (parseRes && parseRes.content) {
                     resumeContent = parseRes.content;
+                    console.log('[InterviewStart] ✅ 简历解析成功，提取字数:', resumeContent.length);
                 }
             } catch(e) {
-                console.warn('简历解析失败，将不包含简历内容', e);
+                console.warn('[InterviewStart] ⚠️ 简历解析跳过:', e);
             }
         }
 
         // 3. 创建 session (后端)
+        console.log('[InterviewStart] 3. 正在创建服务端面试会话 Session...');
         const sessionRes = await api.createSession(currentInterview.jdId, currentInterview.resumeId);
-        if (sessionRes.code !== 200) { alert(sessionRes.message); return; }
+        if (!sessionRes || sessionRes.code !== 200) {
+            console.error('[InterviewStart] ❌ 创建会话失败:', sessionRes);
+            if (sessionRes && (sessionRes.code === 401 || sessionRes.code === 403 || (typeof sessionRes.message === 'string' && sessionRes.message.toLowerCase().includes('token')))) {
+                alert('登录状态已过期，请重新登录！');
+                showLogin();
+            } else {
+                alert((sessionRes && sessionRes.message) || '创建面试会话失败，请重试');
+            }
+            return;
+        }
         currentInterview.backendSessionId = sessionRes.data.id;
-        currentInterview.sessionId = null; // AI session ID will be set later
+        currentInterview.sessionId = null;
+        console.log('[InterviewStart] ✅ 会话创建成功, BackendSessionID:', currentInterview.backendSessionId);
 
-        // 4. 显示面试页面
+        // 4. 切换到面试答题界面
         showPage('interview');
         const msgArea = document.getElementById('interviewMessages');
         msgArea.innerHTML = '';
         document.getElementById('answerInput').value = '';
         addMessage('agent', '🤔 AI 正在分析你的 JD 和简历，生成面试题目...');
 
-        // 5. 调用 AI 服务开始面试（SSE 流式）
+        // 5. 调用 AI 服务开始面试（支持 SSE 流式与同步接口自动双保险兜底）
+        console.log('[InterviewStart] 4. 正在请求 AI 服务生成智能考题...');
         let aiRes = null;
-        await api.aiStartInterviewStream(jdContent, resumeContent, (evt) => {
-            if (evt.event === 'progress') {
-                const step = evt.data?.step;
-                if (step === 'jd_analysis') {
-                    setTimeout(() => addMessage('agent', '📄 正在分析职位描述...'), 800);
-                } else if (step === 'jd_analysis_done') {
-                    setTimeout(() => addMessage('agent', '📄 JD 分析完成'), 2000);
-                } else if (step === 'resume_analysis_done') {
-                    setTimeout(() => addMessage('agent', '👤 简历分析完成'), 3500);
-                } else if (step === 'gap_analysis_done') {
-                    setTimeout(() => {
-                        addMessage('agent', '🔍 技能差距分析完成');
-                        addMessage('agent', '⏳ 正在根据你的背景和岗位要求生成面试题目，请稍候...');
-                    }, 5000);
-                } else if (step === 'questions_ready') {
-                    addMessage('agent', '📝 面试题目已生成，准备开始...');
+
+        try {
+            await api.aiStartInterviewStream(jdContent, resumeContent, (evt) => {
+                if (evt.event === 'progress') {
+                    const step = evt.data?.step;
+                    console.log('[InterviewStart] 📡 AI 出题进度更新:', step);
+                    if (step === 'jd_analysis') {
+                        setTimeout(() => addMessage('agent', '📄 正在分析职位描述...'), 500);
+                    } else if (step === 'jd_analysis_done') {
+                        setTimeout(() => addMessage('agent', '📄 JD 分析完成'), 1500);
+                    } else if (step === 'resume_analysis_done') {
+                        setTimeout(() => addMessage('agent', '👤 简历分析完成'), 2500);
+                    } else if (step === 'gap_analysis_done') {
+                        setTimeout(() => {
+                            addMessage('agent', '🔍 技能差距分析完成');
+                            addMessage('agent', '⏳ 正在根据你的背景和岗位要求生成面试题目，请稍候...');
+                        }, 3500);
+                    } else if (step === 'questions_ready') {
+                        addMessage('agent', '📝 面试题目已生成，准备开始...');
+                    }
+                } else if (evt.event === 'complete') {
+                    aiRes = evt.data;
+                    console.log('[InterviewStart] 📥 流式获取题目完成:', aiRes);
                 }
-            } else if (evt.event === 'complete') {
-                aiRes = evt.data;
-            }
-        });
+            });
+        } catch (streamErr) {
+            console.warn('[InterviewStart] ⚠️ 流式连接受限或超时，自动切换同步接口兜底:', streamErr);
+            addMessage('agent', '⏳ 正在通过备用通道加速生成题目...');
+            aiRes = await api.aiStartInterview(jdContent, resumeContent);
+            console.log('[InterviewStart] 📥 同步接口兜底成功:', aiRes);
+        }
 
-        if (!aiRes || !aiRes.session_id) { addMessage('agent', '❌ 面试启动失败'); return; }
+        if (!aiRes || !aiRes.session_id) {
+            console.error('[InterviewStart] ❌ AI 出题未返回有效 session_id');
+            addMessage('agent', '❌ 面试启动失败，请检查网络或稍后重试');
+            return;
+        }
 
-        // 6. 将 session 状态改为 IN_PROGRESS（以便刷新后恢复）
+        console.log('[InterviewStart] 5. 正在同步会话状态并保存题目列表...');
+
+        // 6. 将 session 状态改为 IN_PROGRESS
         try {
             await fetch(`${API_BASE}/sessions/${currentInterview.backendSessionId}/status`, {
                 method: 'PUT',
@@ -223,7 +270,7 @@ async function startInterview() {
         currentInterview.currentIdx = 0;
         currentInterview.answers = [];
 
-        // 7. 保存完整题目列表到后端（用于刷新后恢复）
+        // 7. 保存完整题目列表到后端
         try {
             await api.saveSessionQuestions(currentInterview.backendSessionId, aiRes.questions || []);
         } catch(e) {
@@ -240,9 +287,12 @@ async function startInterview() {
         analysisMsg += `共 **${aiRes.total_questions}** 道题，开始作答！`;
         addMessage('agent', analysisMsg);
 
+        console.log('[InterviewStart] 🎉 面试启动成功！开始展示第 1 题');
         showQuestion(0);
+
     } catch (e) {
-        addMessage('agent', '❌ 启动面试失败: ' + e.message);
+        console.error('[InterviewStart] ❌ 启动面试异常:', e);
+        addMessage('agent', '❌ 启动面试失败: ' + (e.message || '网络连接异常，请检查服务器网络'));
     }
 }
 
@@ -310,7 +360,7 @@ function showQuestion(idx) {
     currentInterview.currentIdx = idx;
     document.getElementById('answerInput').placeholder = '输入你的回答，或点击麦克风语音作答...';
     document.getElementById('answerInput').disabled = false;
-    document.getElementById('answerInput').focus();
+    // 移除自动聚焦 .focus()，防止每次出题后手机软键盘自动弹起遮挡题目内容
     document.getElementById('progressText').textContent = `${idx+1}/${questions.length}`;
     document.getElementById('progressFill').style.width = `${((idx+1)/questions.length)*100}%`;
 }

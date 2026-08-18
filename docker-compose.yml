@@ -55,12 +55,16 @@ services:
     container_name: smart-ai-service
     ports:
       - "8001:8001"
+    volumes:
+      - ./ai-service/app:/app/app
+      - ./ai-service/models:/app/models
     environment:
       DATABASE_URL: mysql+pymysql://root:${MYSQL_ROOT_PASSWORD}@mysql:3306/smart_interview
       DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY}
       DEEPSEEK_BASE_URL: https://api.deepseek.com
       BACKEND_URL: http://backend:8080
       INTERNAL_API_KEY: ${INTERNAL_API_KEY}
+      HF_ENDPOINT: https://hf-mirror.com
     depends_on:
       mysql:
         condition: service_healthy

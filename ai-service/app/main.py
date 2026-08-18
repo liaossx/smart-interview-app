@@ -12,6 +12,12 @@ from app.core.config import get_settings
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    # 服务启动时预热装载 Vosk 离线语音模型
+    try:
+        from app.api.v1.routes.voice import _get_vosk_model
+        _get_vosk_model()
+    except Exception:
+        pass
     yield
 
 
